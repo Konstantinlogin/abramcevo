@@ -1,0 +1,22 @@
+.header
+    position: relative
+    z-index: 3
+    display: table
+    width: 100%
+    max-width: $container-width
+    margin: auto
+    &__row
+        display: table-row
+    &__left, &__right, &__center
+        display: table-cell
+        vertical-align: middle
+
+    &__center
+        width: 10%
+    &__left, &__right
+        border-bottom: 1px solid
+        width: 45%
+    &__left
+        text-align: left
+    &__right
+        text-align: right

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/fonts//icomoon.eot?y16qu0");
+  src: url("../fonts/icomoon/fonts//icomoon.eot?y16qu0#iefix") format("embedded-opentype"), url("../fonts/icomoon/fonts//icomoon.ttf?y16qu0") format("truetype"), url("../fonts/icomoon/fonts//icomoon.woff?y16qu0") format("woff"), url("../fonts/icomoon/fonts//icomoon.svg?y16qu0#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-alert-circle:before {
+  content: ""; }
+
+.icon-align-center:before {
+  content: ""; }
+
+.icon-align-justify:before {
+  content: ""; }
+
+.icon-align-left:before {
+  content: ""; }
+
+.icon-align-right:before {
+  content: ""; }
+
+.icon-check-circle:before {
+  content: ""; }
+
+.icon-check-square:before {
+  content: ""; }
+
+.icon-check:before {
+  content: ""; }
+
+.icon-download:before {
+  content: ""; }
+
+.icon-info:before {
+  content: ""; }
+
+.icon-more-horizontal:before {
+  content: ""; }
+
+.icon-x-circle:before {
+  content: ""; }
+
+.icon-mail:before {
+  content: ""; }
+
+.icon-phone-call:before {
+  content: ""; }
+
+.icon-down-chevron:before {
+  content: ""; }
+
+.icon-left-chevron:before {
+  content: ""; }
+
+.icon-location-pin:before {
+  content: ""; }
+
+.icon-medal:before {
+  content: ""; }
+
+.icon-right-chevron:before {
+  content: ""; }
+
+.icon-ruble:before {
+  content: ""; }
+
+.icon-trophy:before {
+  content: ""; }
+
+.icon-up-chevron:before {
+  content: ""; }
+
+.icon-search-minus:before {
+  content: ""; }
+
+.icon-search-plus:before {
+  content: ""; }
+
+.icon-search2:before {
+  content: ""; }
+
+.icon-profile-male:before {
+  content: ""; }
+
+.icon-vk-with-circle:before {
+  content: ""; }
+
+.icon-facebook-with-circle:before {
+  content: ""; }
+
+.icon-instagram-with-circle:before {
+  content: ""; }
+
+.icon-refresh:before {
+  content: ""; }
+
+.icon-youtube2:before {
+  content: ""; }
+
+.icon-skype:before {
+  content: ""; }
+
+.icon-clock:before {
+  content: ""; }
