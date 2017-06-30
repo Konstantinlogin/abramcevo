@@ -1,0 +1,20 @@
+.search
+    position: relative
+    bottom: 2.5px
+    left: 10px
+    display: inline-block
+    &__input
+        position: relative
+        z-index: 1
+        border: none
+        border-bottom: 1px solid
+        outline: none
+        background: transparent
+        padding-left: 1.3em
+        padding-bottom: 2.5px
+    &__icon
+        +icomoon
+        @extend .icon-search2
+        position: absolute
+        left: 0
+        font-size: 1.3em
