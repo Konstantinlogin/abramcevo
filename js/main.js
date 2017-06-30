@@ -14,6 +14,8 @@ $(document).ready(function () {
                 .addClass('is-active');
             $(".nav")
                 .addClass('is-active');
+            $(".js-under-menu")
+                .addClass('is-active')
             $(".menu-button-block__menu-name")
                 .text("закрыть")
                 .addClass("is-active");
@@ -23,7 +25,10 @@ $(document).ready(function () {
         else {
             $(".menu-button-block")
                 .removeClass('is-active');  // Todo: сделать удаление класса с .menu-button-block через setinterval, равным transition анимации закрытия блока .nav
-            $(".nav").removeClass('is-active')
+            $(".nav")
+                .removeClass('is-active')
+            $(".js-under-menu")
+                .removeClass('is-active')
             $(".menu-button-block__menu-name")
                 .text(menuNameText)
                 .removeClass("is-active");

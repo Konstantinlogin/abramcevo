@@ -3,6 +3,7 @@
 
     &.is-active
         position: fixed
+        color: white
 
     &__button
         display: block
@@ -15,6 +16,8 @@
         font-size: 0.9em
         cursor: pointer
         user-select: none
+        &.is-active
+          color: white
 
 // @media screen and (max-width: $screen-medium)
     .menu-button-block
@@ -28,6 +31,8 @@
   overflow: hidden
 
   &.is-open
+    .menu-btn__line 
+      background-color: white
     // position: fixed
   &__icon 
     position: absolute
@@ -36,9 +41,6 @@
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
-  &_white
-    .menu-btn__line 
-      background-color: white
   
   &__line 
     position: absolute
