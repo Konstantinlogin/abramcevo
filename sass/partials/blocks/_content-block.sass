@@ -1,0 +1,18 @@
+.content-block
+    display: flex
+    display: -ms-flex
+    display: -webkit-flex
+    max-width: 980px
+    margin: auto
+    &__col-50
+        width: 50%
+
+    &__text
+        line-height: 1.5
+        color: #333
+
+    &__link
+        @extend %base-link
+        &_right
+            float: right
+

@@ -26,6 +26,33 @@
         max-width: (980px/2) - (209px/2)
         height: 25px
 
+    &_white
+        color: white
+        opacity: 0.8
+
+        .menu-btn__line
+            background: white
+
+        .logo
+            background-image: url(../img/logo_white.png)
+
+        .search__input
+            &::-webkit-input-placeholder
+                color: white
+            &::-moz-placeholder
+                color: white
+            &:-moz-placeholder
+                color: white
+            &:-ms-input-placeholder
+                color: white
+
+
+.js-under-menu
+    &.is-active
+        color: #ccc
+        opacity: 1
+        
+
 @media screen and (max-width: $screen-medium)
     .header
         max-width: 100%

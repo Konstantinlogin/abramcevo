@@ -10,31 +10,49 @@ $(document).ready(function () {
 
         if ($('.menu-btn').hasClass('is-open')) {
 
-            $(".menu-button-block")
+            $(".menu-btn, .menu-button-block, .nav, .js-under-menu, .menu-button-block__menu-name")
                 .addClass('is-active');
-            $(".nav")
-                .addClass('is-active');
-            $(".js-under-menu")
-                .addClass('is-active')
+
             $(".menu-button-block__menu-name")
                 .text("закрыть")
-                .addClass("is-active");
 
         }
 
         else {
-            $(".menu-button-block")
-                .removeClass('is-active');  // Todo: сделать удаление класса с .menu-button-block через setinterval, равным transition анимации закрытия блока .nav
+
             $(".nav")
-                .removeClass('is-active')
-            $(".js-under-menu")
-                .removeClass('is-active')
+                .removeClass('is-active');
+
+            setTimeout(function () {
+                $(".menu-btn, .menu-button-block, .menu-button-block__menu-name, .js-under-menu")
+                    .removeClass('is-active');
+            }, 500);
+
+
             $(".menu-button-block__menu-name")
                 .text(menuNameText)
-                .removeClass("is-active");
 
         }
 
+    });
+
+ 
+    var servicesSlider = new Swiper('.slider-services', {
+        nextButton: '.slider-services__arrow-right',
+        prevButton: '.slider-services__arrow-left',
+        slideClass: 'slider-services__slide',
+        autoplay: 4000,
+        loop: true,
+        spaceBetween: 30
+    });
+
+    var teamSwiper = new Swiper('.slider-team', {
+        nextButton: '.slider-team__arrow-right',
+        prevButton: '.slider-team__arrow-left',
+        slideClass: 'slider-team__slide',
+        autoplay: 4000,
+        loop: true,
+        spaceBetween: 30
     });
 
 
