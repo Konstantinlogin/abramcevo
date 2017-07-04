@@ -1,0 +1,104 @@
+.slider-team
+    @extend .swiper-container
+    position: relative
+    min-height: 250px
+
+    &__wrapper
+        @extend .swiper-wrapper
+        position: relative !important
+        z-index: 0 !important
+
+    &__slide
+        @extend .swiper-slide
+
+    &__arrow-left
+        position: absolute
+        top: calc(50% - 2em)
+        left: 0
+        color: #333
+        padding-top: 2em
+        padding-right: 2em
+        padding-bottom: 2em
+
+        cursor: pointer
+        font-size: 1.5rem
+        &:before
+            +icomoon
+            content: "\e907"
+        &.swiper-button-disabled
+            opacity: 0.5
+    
+    &__arrow-right
+        position: absolute
+        top: calc(50% - 2em)
+        right: 0
+        color: #333
+        padding-top: 2em
+        padding-left: 2em
+        padding-bottom: 2em
+        cursor: pointer
+        font-size: 1.5rem
+
+        &:before
+            +icomoon
+            content: "\e90c"
+
+        &.swiper-button-disabled
+            opacity: 0.5
+
+
+    &__heading
+        font-family: 'Kurale'
+        text-align: center
+        font-size: 2em
+
+        &:after
+            content: ""
+            display: block
+            width: 180px
+            height: 1px
+            margin: 0.5em auto
+            background-color: white
+
+    &__description
+        width: 100%
+        text-align: center
+        
+
+    &__price
+        display: inline-block
+        margin-right: 180px
+        &:before
+            font-family: "icomoon" !important
+            content: "\e90d"
+            font-size: 1.5em
+            padding-right: 10px
+
+    &__read-more
+        display: inline-block
+        color: inherit
+        text-decoration: none
+        border-bottom: 1px solid
+        &:after
+            +icomoon
+            content: "\e90c"
+            font-size: 10px
+
+    &__avatar-circle
+        width: 122px
+        height: 122px
+        border-radius: 122px
+        border: 2px solid
+        float: left
+
+    &__avatar-image
+        width: 118px
+        height: 118px
+        border-radius: 119px
+        border: 2px solid white
+        background-size: cover
+        background-repeat: no-repeat
+
+
+
+ 
