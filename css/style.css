@@ -269,6 +269,7 @@ html, body {
   display: table;
   height: 100%;
   width: 100%;
+  min-width: 980px;
   margin: 0 auto; }
 
 .lo-wrapper-inner {
@@ -881,6 +882,11 @@ button.swiper-pagination-bullet {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
+.slider-team__coach-text {
+  font-family: 'Roboto';
+  color: #333;
+  line-height: 1.5; }
+
 .email__link, .content-block__link, .nav__menu li a {
   color: inherit;
   text-decoration: none;
@@ -1025,7 +1031,7 @@ button.swiper-pagination-bullet {
           border-bottom: 1px solid; }
 
 .section_head-main {
-  height: calc(100vh - 155px); }
+  height: calc(100vh - 205px); }
 
 .section_content {
   background-color: white;
@@ -1042,6 +1048,10 @@ button.swiper-pagination-bullet {
   filter: sepia(50%);
   -webkit-filter: sepia(50%);
   background-color: #808080; }
+
+@media screen and (max-width: 1245) {
+  .bg-video {
+    height: 100vh; } }
 
 .dark-overlay {
   position: fixed;
@@ -1077,6 +1087,16 @@ button.swiper-pagination-bullet {
   flex-wrap: wrap;
   max-width: 980px;
   margin: auto; }
+  .content-block_valign-middle {
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .content-block__col-25 {
+    width: 20%; }
   .content-block__col-50 {
     width: 50%; }
   .content-block__col-100 {
@@ -1085,7 +1105,8 @@ button.swiper-pagination-bullet {
     line-height: 1.5;
     color: #333; }
   .content-block__link_right {
-    float: right; }
+    float: right;
+    margin-right: 10px; }
 
 .slider-services {
   position: relative;
@@ -1231,49 +1252,15 @@ button.swiper-pagination-bullet {
       content: "\e90c"; }
     .slider-team__arrow-right.swiper-button-disabled {
       opacity: 0.5; }
-  .slider-team__heading {
-    font-family: 'Kurale';
-    text-align: center;
-    font-size: 2em; }
-    .slider-team__heading:after {
-      content: "";
-      display: block;
-      width: 180px;
-      height: 1px;
-      margin: 0.5em auto;
-      background-color: white; }
-  .slider-team__description {
-    width: 100%;
-    text-align: center; }
-  .slider-team__price {
-    display: inline-block;
-    margin-right: 180px; }
-    .slider-team__price:before {
-      font-family: "icomoon" !important;
-      content: "\e90d";
-      font-size: 1.5em;
-      padding-right: 10px; }
-  .slider-team__read-more {
-    display: inline-block;
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1px solid; }
-    .slider-team__read-more:after {
-      font-family: 'icomoon' !important;
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      content: "\e90c";
-      font-size: 10px; }
   .slider-team__avatar-circle {
     width: 122px;
     height: 122px;
     border-radius: 122px;
     border: 2px solid;
-    float: left; }
+    float: left;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 1em; }
   .slider-team__avatar-image {
     width: 118px;
     height: 118px;
@@ -1281,6 +1268,8 @@ button.swiper-pagination-bullet {
     border: 2px solid white;
     background-size: cover;
     background-repeat: no-repeat; }
+  .slider-team__coach-name {
+    font-weight: 500; }
 
 .menu-button-block {
   position: absolute; }

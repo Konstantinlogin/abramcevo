@@ -11,6 +11,7 @@
     &__slide
         @extend .swiper-slide
 
+
     &__arrow-left
         position: absolute
         top: calc(50% - 2em)
@@ -47,49 +48,15 @@
             opacity: 0.5
 
 
-    &__heading
-        font-family: 'Kurale'
-        text-align: center
-        font-size: 2em
-
-        &:after
-            content: ""
-            display: block
-            width: 180px
-            height: 1px
-            margin: 0.5em auto
-            background-color: white
-
-    &__description
-        width: 100%
-        text-align: center
-        
-
-    &__price
-        display: inline-block
-        margin-right: 180px
-        &:before
-            font-family: "icomoon" !important
-            content: "\e90d"
-            font-size: 1.5em
-            padding-right: 10px
-
-    &__read-more
-        display: inline-block
-        color: inherit
-        text-decoration: none
-        border-bottom: 1px solid
-        &:after
-            +icomoon
-            content: "\e90c"
-            font-size: 10px
-
     &__avatar-circle
         width: 122px
         height: 122px
         border-radius: 122px
         border: 2px solid
         float: left
+        margin-top: 1em
+        margin-left: 2em
+        margin-right: 1em
 
     &__avatar-image
         width: 118px
@@ -98,6 +65,12 @@
         border: 2px solid white
         background-size: cover
         background-repeat: no-repeat
+
+    &__coach-name
+        font-weight: 500
+
+    &__coach-text
+        @extend %base-text
 
 
 
