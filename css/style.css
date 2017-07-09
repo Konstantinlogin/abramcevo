@@ -882,16 +882,16 @@ button.swiper-pagination-bullet {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
-.content-block__text, .slider-team__text, .slider-team__text-count {
+.content-block__text, .news-block__text, .slider-team__text, .slider-team__text-count {
   font-family: 'Roboto';
   color: #333;
   line-height: 1.5; }
 
-.email__link, .content-block__link, .nav__menu li a {
+.email__link, .content-block__link, .news-block__link, .nav__menu li a {
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid; }
-  .email__link:hover, .content-block__link:hover, .nav__menu li a:hover {
+  .email__link:hover, .content-block__link:hover, .news-block__link:hover, .nav__menu li a:hover {
     border-bottom: 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -1132,6 +1132,59 @@ button.swiper-pagination-bullet {
     .content-block__link_center {
       text-align: center;
       display: inline-block; }
+
+.news-block {
+  max-width: 980px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  dispay: -ms-flex;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .news-block__item {
+    width: 30%;
+    margin-right: 20px; }
+    .news-block__item:first-child {
+      width: 100%;
+      position: relative;
+      height: 320px;
+      padding-right: calc(30% + 15px);
+      text-align: right; }
+      .news-block__item:first-child .news-block__image {
+        width: calc(30% + 5px);
+        height: 320px;
+        position: absolute;
+        right: 0;
+        top: 0; }
+      .news-block__item:first-child .news-block__link {
+        float: none; }
+  .news-block__image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .news-block__title {
+    font-weight: 500;
+    font-size: 98%;
+    display: block;
+    min-height: 40px;
+    color: #333; }
+  .news-block__text {
+    display: block;
+    min-height: 70px; }
+  .news-block__date {
+    color: gray;
+    font-size: 90%; }
+  .news-block__link {
+    float: right; }
 
 .slider-services {
   position: relative;
