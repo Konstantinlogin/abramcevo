@@ -1,7 +1,8 @@
 .slider-team
     @extend .swiper-container
     position: relative
-    min-height: 250px
+    max-width: 980px
+    margin: auto
 
     &__wrapper
         @extend .swiper-wrapper
@@ -12,15 +13,17 @@
         @extend .swiper-slide
 
 
+    &__content
+        max-width: 840px
+        margin: auto
+
     &__arrow-left
         position: absolute
-        top: calc(50% - 2em)
+        top: 50%
+        transform: translate(0, -50%)
         left: 0
+        z-index: 3
         color: #333
-        padding-top: 2em
-        padding-right: 2em
-        padding-bottom: 2em
-
         cursor: pointer
         font-size: 1.5rem
         &:before
@@ -31,8 +34,10 @@
     
     &__arrow-right
         position: absolute
-        top: calc(50% - 2em)
+        top: 50%
+        transform: translate(0, -50%)
         right: 0
+        z-index: 3
         color: #333
         padding-top: 2em
         padding-left: 2em
@@ -49,9 +54,9 @@
 
 
     &__avatar-circle
-        width: 122px
-        height: 122px
-        border-radius: 122px
+        width: 109px
+        height: 109px
+        border-radius: 109px
         border: 2px solid
         float: left
         margin-top: 1em
@@ -59,9 +64,9 @@
         margin-right: 1em
 
     &__avatar-image
-        width: 118px
-        height: 118px
-        border-radius: 119px
+        width: 105px
+        height: 105px
+        border-radius: 104px
         border: 2px solid white
         background-size: cover
         background-repeat: no-repeat
@@ -76,9 +81,30 @@
         +icomoon
         @extend .icon-trophy
         display: block
-        font-size: 52px
+        font-size: 42px
         float: left
+        margin-right: 10px 
         // padding-right: 10px
+
+    &__icon-medal
+        +icomoon
+        @extend .icon-medal
+        display: block
+        font-size: 42px
+        float: left
+        margin-right: 10px 
+
+    &__text-count
+        @extend %base-text
+        display: inline-block
+        line-height: 1
+        font-size: 0.9em
+        width: 70px
+
+    &__count
+        font-size: 2rem
+        display: block
+        
 
 
 

@@ -33,7 +33,7 @@
         li
             display: block
             margin-bottom: 2rem
-            // padding-right: 10px
+
             a
                 @extend %base-link
                 width: 100%
@@ -42,3 +42,11 @@
                 &.is-active
                     border: none
                     font-weight: 500
+
+@media screen and (max-width: $screen-medium)
+    .nav
+        &__menu
+            li
+                padding-right: 10px
+
+// @media screen and (max-width: $screen-small)

@@ -50,7 +50,7 @@ $(document).ready(function () {
         nextButton: '.slider-team__arrow-right',
         prevButton: '.slider-team__arrow-left',
         slideClass: 'slider-team__slide',
-        autoplay: 4000,
+        autoplay: false,
         loop: true,
         spaceBetween: 30
     });
