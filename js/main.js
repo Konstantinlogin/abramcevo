@@ -36,6 +36,9 @@ $(document).ready(function () {
 
     });
 
+    // Inits
+
+    // Swiper
  
     var servicesSlider = new Swiper('.slider-services', {
         nextButton: '.slider-services__arrow-right',
@@ -55,6 +58,11 @@ $(document).ready(function () {
         spaceBetween: 30
     });
 
+    // Yandex map
+
+
+
 
 
 });
+

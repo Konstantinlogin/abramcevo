@@ -1,8 +1,11 @@
 .page-header
-    display: inline-block
+    display: block
     width: 100%
+    max-width: 980px
+    margin: auto
     text-align: center
-    padding-bottom: 1rem
+    padding-bottom: 2rem
+    padding-top: 1rem
     &_left
         text-align: left
     &_right
@@ -11,5 +14,17 @@
         display: inline-block
         font-family: 'Kurale'
         font-size: 2rem
-        border-bottom: 2px solid
-        padding-bottom: 5px
+        &:after
+            content: ''
+            display: block
+            width: 320px
+            margin: 1rem auto
+            height: 1px
+            background: #ccc
+        &:before
+            content: ''
+            display: block
+            width: 320px
+            margin: 0.5rem auto
+            height: 1px
+            background: #ccc

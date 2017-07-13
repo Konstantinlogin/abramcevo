@@ -181,34 +181,72 @@
                 </div>
                 <div class="news-block">
                     <div class="news-block__item">
-                        <h2 class="news-block__title">Поздравляем с победой Нашу Дашу</h2>
-                        <div class="news-block__image" style="background-image: url('img/news-3.jpg')"></div>
+                        <a href="#" class="news-block__title">Поздравляем с победой Нашу Дашу</a>
+                        <div class="news-block__image" style="background-image: url('img/news-2.jpg')"></div>
                         <span class="news-block__date">01.04.2017</span>
                         <p class="news-block__text">В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход...</p>
                         <a href="#" class="news-block__link">Подробнее</a>
                     </div>
                     <div class="news-block__item">
-                        <h2 class="news-block__title">Поздравляем с победой Нашу Дашу</h2>
+                        <a href="#" class="news-block__title">Поздравляем с победой Нашу Дашу</a>
                         <div class="news-block__image" style="background-image: url('img/news-1.jpg')"></div>
                         <span class="news-block__date">01.04.2017</span>
                         <p class="news-block__text">В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход...</p>
                         <a href="#" class="news-block__link">Подробнее</a>
                     </div>
                     <div class="news-block__item">
-                        <h2 class="news-block__title">Поздравляем с победой Дарью Привалову!</h2>
+                        <a href="#" class="news-block__title">Поздравляем с победой Дарью Привалову!</a>
                         <div class="news-block__image" style="background-image: url('img/news-2.jpg')"></div>
                         <span class="news-block__date">02.05.2017</span>
                         <p class="news-block__text">В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует...</p>
                         <a href="#" class="news-block__link">Подробнее</a>
                     </div>
                     <div class="news-block__item">
-                        <h2 class="news-block__title">Поздравляем с победой Дарью Привалову!</h2>
+                        <a href="#" class="news-block__title">Поздравляем с победой Дарью Привалову!</a>
                         <div class="news-block__image" style="background-image: url('img/news-3.jpg')"></div>
                         <span class="news-block__date">03.06.2017</span>
                         <p class="news-block__text">В связи с этим нужно подчеркнуть, что ламинарное движение...</p>
                         <a href="#" class="news-block__link">Подробнее</a>
                     </div>
                 </div>
+            </section>
+            <section class="section section_content">
+                <div class="page-header">
+                    <h1 class="page-header__title">Контакты</h1>
+                </div>
+                <div class="yandex-map-block">
+                    <div class="yandex-map-block__map" id="map"> </div>
+                </div>
+
+                <script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU'></script>
+                <script>
+                    ymaps.ready(init);
+                    function init(){
+                    var myMap;
+                    var myPlacemark;
+                    var adress;
+                        ymaps.geocode(adress).then(function (res) {
+                                adress = [56.243523, 37.936712];
+                                myMap = new ymaps.Map("map", {
+                                center: adress,
+                                zoom: 15,
+                                controls: ['zoomControl']
+                            });
+                            myMap.behaviors.disable(['drag', 'scrollZoom', 'rightMouseButtonMagnifier']);
+
+                            myPlacemark = new ymaps.Placemark(adress, { 
+                                // hintContent: 'Можно написать хинт',
+                                balloonContent: 'КСК Абрамцево'
+                            });
+
+                            myMap.geoObjects.add(myPlacemark);
+                        }
+                
+                        );
+                        
+
+                    }
+                </script>
             </section>
         </main>
         <footer class="footer">
