@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/libs/jquery.min.js"></script>
     <script src="js/plugins/swiper.jquery.min.js"></script>
+    <script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU'></script>
     <script src="js/main.js"></script>
 </head>
 
@@ -26,7 +27,7 @@
                         <input type="text" placeholder="Поиск по сайту" class="search__input" />
                     </div>
                 </div>
-                <span class="phone"><i class="phone__icon"></i>+7 123 6782012</span>
+                <span class="phone pt-50"><i class="phone__icon"></i>+7 985 1345795</span>
                 <span class="work-time"><i class="work-time__icon"></i>пн-пт с 9:00 до 20:00</span>
             </div>
             <div class="header__center">
@@ -45,7 +46,7 @@
                         </div>
                     </div>
                 </div>
-                <span class="address"><i class="address__icon"></i>Сергиево-посадский район, дер. Жучки</span>
+                <address class="address pt-50"><i class="address__icon"></i>Сергиево-посадский район, дер. Жучки</address>
                 <span class="email"><i class="email__icon"></i><a href="#" class="email__link">Abramcevo@mail.ru</a></span>
             </div>
         </header>
@@ -214,39 +215,22 @@
                 <div class="page-header">
                     <h1 class="page-header__title">Контакты</h1>
                 </div>
-                <div class="yandex-map-block">
+                <div class="yandex-map-block yandex-map-block--bottom-reset">
+                    <div class="yandex-map-block__content">
+                        <div class="yandex-map-block__content-inner">
+                            <h2 class="yandex-map-block__title">Конно-спортивный клуб "Абрамцево"</h2>
+                            <span class="phone">
+                            Телефоны:<br/>
+                                <i class="phone__icon"></i>+7 (985) 134-57-95, <small>(915) 276-76-88, (919) 990-68-72.</small>
+                            </span>
+                            <address class="address pt-50">Наш адрес:<br/>
+                                <i class="address__icon"></i>Сергиево-посадский район, дер. Жучки
+                            </address>
+                            <a class="yandex-map-block__link" href="#">Как добраться > </a>
+                        </div>
+                    </div>
                     <div class="yandex-map-block__map" id="map"> </div>
                 </div>
-
-                <script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU'></script>
-                <script>
-                    ymaps.ready(init);
-                    function init(){
-                    var myMap;
-                    var myPlacemark;
-                    var adress;
-                        ymaps.geocode(adress).then(function (res) {
-                                adress = [56.243523, 37.936712];
-                                myMap = new ymaps.Map("map", {
-                                center: adress,
-                                zoom: 15,
-                                controls: ['zoomControl']
-                            });
-                            myMap.behaviors.disable(['drag', 'scrollZoom', 'rightMouseButtonMagnifier']);
-
-                            myPlacemark = new ymaps.Placemark(adress, { 
-                                // hintContent: 'Можно написать хинт',
-                                balloonContent: 'КСК Абрамцево'
-                            });
-
-                            myMap.geoObjects.add(myPlacemark);
-                        }
-                
-                        );
-                        
-
-                    }
-                </script>
             </section>
         </main>
         <footer class="footer">

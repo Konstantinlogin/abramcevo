@@ -20,11 +20,11 @@ $(document).ready(function () {
 
         else {
 
-            $(".nav")
+            $(".nav, .js-under-menu")
                 .removeClass('is-active');
 
             setTimeout(function () {
-                $(".menu-btn, .menu-button-block, .menu-button-block__menu-name, .js-under-menu")
+                $(".menu-btn, .menu-button-block, .menu-button-block__menu-name, ")
                     .removeClass('is-active');
             }, 500);
 
@@ -59,6 +59,35 @@ $(document).ready(function () {
     });
 
     // Yandex map
+    ymaps.ready(init);
+    function init(){
+    var myMap;
+    var myPlacemark;
+    var adress;
+    
+        ymaps.geocode(adress).then(function (res) {
+                adress = [56.243523, 37.936712];
+                myMap = new ymaps.Map("map", {
+                center: adress,
+                zoom: 15,
+                // controls: ['zoomControl']
+                controls: []
+            });
+
+            myMap.behaviors.disable(['drag', 'scrollZoom',  'rightMouseButtonMagnifier']);
+
+            myPlacemark = new ymaps.Placemark(adress, { 
+                // hintContent: 'Можно написать хинт',
+                balloonContent: 'КСК Абрамцево'
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+
+        );
+        
+
+    }
 
 
 
