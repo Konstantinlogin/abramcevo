@@ -1,7 +1,6 @@
 .work-time
     display: inline-block
     width: 100%
-    padding-top: 20px
     
     &__icon
         +icomoon
@@ -9,3 +8,9 @@
         position: relative
         top: 1.5px
         padding-right: 10px
+
++media($screen-small)
+    .work-time
+        font-size: 80%
+        &__icon
+            visibility: hidden

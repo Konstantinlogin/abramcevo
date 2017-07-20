@@ -3,13 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>КRRR</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/libs/jquery.min.js"></script>
+    <script src="js/plugins/bideo.js"></script>
     <script src="js/plugins/swiper.jquery.min.js"></script>
     <script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU'></script>
+    <script src="js/plugins/swiper.jquery.min.js"></script>
+
     <script src="js/main.js"></script>
 </head>
 
@@ -17,24 +20,24 @@
     <div class="lo-wrapper">
         <header class="header header_white">
             <div class="header__left">
-                <div class="header__left-top">
-                    <div class="social">
-                        <a href="#" class="social__link-vk"></a>
-                        <a href="#" class="social__link-inst"></a>
-                    </div>
-                    <div class="search">
-                        <i class="search__icon"></i>
-                        <input type="text" placeholder="Поиск по сайту" class="search__input" />
-                    </div>
+                <div class="social">
+                    <a href="#" class="social__link-vk"></a>
+                    <a href="#" class="social__link-inst"></a>
                 </div>
-                <span class="phone pt-50"><i class="phone__icon"></i>+7 985 1345795</span>
+                <div class="search">
+                    <i class="search__icon"></i>
+                    <input type="text" placeholder="Поиск по сайту" class="search__input" />
+                </div>
+                <span class="phone"><i class="phone__icon"></i>+7 985 1345795</span>
                 <span class="work-time"><i class="work-time__icon"></i>пн-пт с 9:00 до 20:00</span>
             </div>
             <div class="header__center">
-                <a href="#" class="logo">Конно-спортивный клуб "Абрамцево"</a>
+                <a href="#" class="logo">
+                    <h1>Конно-спортивный клуб "Абрамцево"</h1>
+                </a>
             </div>
-            <div class="header__right js-under-menu">
-                <div class="header__right-top menu-button-block">
+            <div class="header__right">
+                <div class="menu-button-block header__nav-button">
                     <div class="menu-button-block__row">
                         <span class="menu-button-block__menu-name">меню</span>
                         <div class="menu-button-block__button menu-btn menu-btn_close1">
@@ -49,41 +52,52 @@
                 <address class="address pt-50"><i class="address__icon"></i>Сергиево-посадский район, дер. Жучки</address>
                 <span class="email"><i class="email__icon"></i><a href="#" class="email__link">Abramcevo@mail.ru</a></span>
             </div>
-        </header>
-        <nav class="nav">
-            <div class="nav__container">
-                <div class="nav__menu-container">
-                    <ul class="nav__menu">
-                        <li>
-                            <a class="is-active" href="#1">Главная</a>
-                        </li>
-                        <li>
-                            <a href="#2">Наша команда</a>
-                        </li>
-                        <li>
-                            <a href="#3">Контакты</a>
-                        </li>
-                        <li>
-                            <a href="#4">Услуги</a>
-                        </li>
-                        <li>
-                            <a href="#5">О нас</a>
-                        </li>
+            <nav class="nav header__nav">
+                <div class="nav__container">
+                    <h2 class="nav__menu-title">Меню сайта</h2>
+                    <div class="nav__menu-container">
+                        <ul class="nav__menu">
+                            <li>
+                                <a class="is-active" href="#1">Главная</a>
+                            </li>
+                            <li>
+                                <a href="#2">Наша команда</a>
+                            </li>
+                            <li>
+                                <a href="#3">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#4">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="#5">О нас</a>
+                            </li>
 
-                        <li>
-                            <a href="#6">Новости</a>
-                        </li>
-                    </ul>
-                    <div class="nav__menu-overlay"></div>
+                            <li>
+                                <a href="#6">Новости</a>
+                            </li>
+                        </ul>
+                        <div class="nav__menu-overlay"></div>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <main class="lo-wrapper-inner content">
+            </nav>
+        </header>
+        <div class="video-controls">
+            <span class="video-controls__play" id="play">
+                <img alt="play">
+            </span>
+            <span class="video-controls__pause" id="pause">
+                <img alt="pause">
+            </span>
+        </div>
+
+        <main class="content">
             <section class="section section_head-main">
-                <video autoplay muted loop class="bg-video" id="bgvideo">
-                    <source class="video" src="video/video6.mp4" type="video/mp4"></source>
-                </video>
-                <div class="dark-overlay"></div>
+                <div class="bg-video">
+                    <video class="bg-video__video" id="background_video" loop muted></video>
+                    <div class="bg-video__video-cover" id="video_cover"></div>
+                    <div class="bg-video__video-overlay"></div>
+                </div>
                 <div class="slider-services">
                     <div class="slider-services__wrapper swiper-wrapper">
                         <div class="slider-services__slide">
@@ -118,6 +132,7 @@
                     <span class="slider-services__arrow-right"></span>
                 </div>
             </section>
+
             <section class="section section_content">
                 <div class="page-header">
                     <h1 class="page-header__title">О нас</h1>
@@ -233,6 +248,8 @@
                 </div>
             </section>
         </main>
+      </div><!--//WRAPPER-->
+
         <footer class="footer">
             <div class="footer__container">
                 <div class="footer__left">
@@ -266,7 +283,8 @@
                 </div>
             </div>
         </footer>
-    </div>
+  
+
 </body>
 
 </html>

@@ -1,30 +1,46 @@
 .header
     position: relative
-    z-index: 3
+    top: 20px
+    z-index: 9
     display: flex
     display: -webkit-flex
     display: -ms-flex
     width: 100%
     max-width: 980px
-    margin: 10px auto
+    margin: 0 auto
     height: $header-height
     font-weight: 100
     &__center
         width: $logo-width
+
     &__left, &__right
         border-bottom: 1px solid
         width: calc(50% - #{$logo-width / 2})
         height: $header-height - 3.5px
+        display: flex
+        display: -ms-flex
+        display: -webkit-flex
+        flex-wrap: wrap
+        align-content: flex-start
+        align-content: stretch
+
+       
     &__left
         text-align: left
+
     &__right
         text-align: right
 
-    &__right-top, &__left-top
+
+
+    &__nav-button
         position: absolute
+        z-index: 5
+        width: 90px
         width: 45%
         max-width: (980px/2) - (209px/2)
         height: 25px
+
 
     &_white
         color: white
@@ -46,25 +62,33 @@
             &:-ms-input-placeholder
                 color: white
 
-
-.js-under-menu
-    &.is-active
-        color: #ccc
-        opacity: 1
         
-
-@media screen and (max-width: $screen-medium)
++media($screen-medium)
     .header
         max-width: 100%
-        &__right-top
-            width: auto
-            max-width: 100%
-            right: 10px
+       
         &__left
             padding-left: 10px
         &__right
             padding-right: 10px
 
+        &__nav-button
+            width: auto
+            max-width: 100%
+            right: 10px
+            top: 0
+            &.is-active
+                top: 20px
 
-// @media screen and (max-width: $screen-medium)
-// @media screen and (max-width: $screen-small)
++media($screen-small)
+    .header
+        display: block
+        min-height: 420px
+        &__right, &__left
+            display: block
+            border-bottom: none
+            height: auto
+            width: calc(100% - 10px)
+
+        &__center
+            margin: 0 auto

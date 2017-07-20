@@ -5,15 +5,20 @@ html, body
 // Stick footer
 
 .lo-wrapper
-    display: table
-    height: 100%
+    position: relative
     width: 100%
-    min-width: 980px
-    margin: 0 auto
-
-.lo-wrapper-inner
-    display: table-row
+    min-height: 100%
+    height: auto !important
     height: 100%
 
-// @media screen and (max-width: $screen-medium)
-// @media screen and (max-width: $screen-small)
+.content
+    padding: 0 0 $footer-height
+
+
+// .section
+//     display: none
+//     &_head-main
+//         display: block
+
+.footer
+    margin: -$footer-height auto 0

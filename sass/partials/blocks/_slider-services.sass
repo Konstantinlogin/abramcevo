@@ -10,10 +10,11 @@
 
     &__wrapper
         @extend .swiper-wrapper
-        position: relative
+        // position: relative
 
     &__slide
         @extend .swiper-slide
+        width: 100% !important
 
     &__arrow-left
         position: absolute
@@ -58,6 +59,7 @@
         font-family: 'Kurale'
         text-align: center
         font-size: 2em
+        line-height: 1
 
         &:after
             content: ""
@@ -90,6 +92,19 @@
             +icomoon
             content: "\e90c"
             font-size: 10px
+
+
++media($screen-small)
+    .slider-services
+        top: 0
+        transform: none
+        &__price
+            display: block
+            margin: 0 auto
+            padding-bottom: 3rem
+        &__heading
+
+
 
 
 

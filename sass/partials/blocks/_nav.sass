@@ -4,7 +4,7 @@
     position: fixed
     right: 0
     top: 0
-    z-index: 2
+    z-index: 3
     height: 100vh
     background-color: rgba(0, 0, 0, 0.9)
     transition-property: -webkit-transform
@@ -20,33 +20,59 @@
         transform: translate3d(0, 0, 0)
         transition-delay: 0s
 
+    
+    &__menu-title
+        position: relative
+        top: $header-height - 74px
+        padding-bottom: 25px
+        display: inline-block
+        margin-left: 40px
+        font-size: 2rem
+        font-family: 'Kurale'
+        border-bottom: 1px solid
+
+    
+
     &__menu
         list-style: none
         width: 100%
         max-width: 350px
-        margin-top: $header-height + 50px
-        // -webkit-transform: translate(0,-50%)
-        // -ms-transform: translate(0,-50%)
-        // transform: translate(0,-50%)
-        text-align: right
-        
+        margin-top: $header-height - 50px
+        text-align: left  
         li
-            display: block
-            margin-bottom: 2rem
+            margin-bottom: 1rem
 
             a
                 @extend %base-link
                 width: 100%
                 font-weight: 100
+                border: none
                 // font-size: 1.4rem
                 &.is-active
                     border: none
                     font-weight: 500
 
-@media screen and (max-width: $screen-medium)
++media($screen-medium)
     .nav
         &__menu
             li
                 padding-right: 10px
++media($screen-small)
+    .nav
+        width: 50%
+
++media($screen-ex-small)
+    .nav
+        width: 100%
+        &__menu-title
+            display: block
+            width: 100%
+        &__menu
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            text-align: right
+            margin-left: -30px
 
 // @media screen and (max-width: $screen-small)

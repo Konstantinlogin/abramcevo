@@ -1,42 +1,56 @@
 $(document).ready(function () {
 
     var menuNameText = $('.menu-button-block__menu-name').text();
-
+    // TODO: хуёвые селекторы, да и вообще можно лаконичнее все написать. Похуй. 
+    var isMenuActive = false;
+    
     $('.menu-btn, .menu-button-block__menu-name').on('click', function (event) {
-        
         event.preventDefault();
-
         $('.menu-btn').toggleClass('is-open');
-
         if ($('.menu-btn').hasClass('is-open')) {
-
-            $(".menu-btn, .menu-button-block, .nav, .js-under-menu, .menu-button-block__menu-name")
-                .addClass('is-active');
-
-            $(".menu-button-block__menu-name")
-                .text("закрыть")
-
+            openMenu();
         }
-
         else {
-
-            $(".nav, .js-under-menu")
-                .removeClass('is-active');
-
-            setTimeout(function () {
-                $(".menu-btn, .menu-button-block, .menu-button-block__menu-name, ")
-                    .removeClass('is-active');
-            }, 500);
-
-
-            $(".menu-button-block__menu-name")
-                .text(menuNameText)
-
+            closeMenu();
         }
-
     });
 
-    // Inits
+    closeMenuOnBodyClick();
+
+    function openMenu() {
+        isMenuActive = true;
+        $(".menu-btn, .menu-button-block, .nav, .menu-button-block__menu-name")
+            .addClass('is-active');
+        $(".menu-button-block__menu-name")
+            .text("закрыть");
+    }
+
+    function closeMenu() {
+        
+        $(".nav")
+            .removeClass('is-active');
+        setTimeout(function () {
+            $(".menu-btn, .menu-button-block, .menu-button-block__menu-name")
+                .removeClass('is-active');
+        }, 500);
+        $(".menu-button-block__menu-name")
+            .text(menuNameText)
+    }
+
+    function closeMenuOnBodyClick() {
+        $(document).click(function(event) {
+            if(!$(event.target).closest('.nav').length && !$(event.target).closest('.menu-button-block').length) {
+                closeMenu();
+                $('.menu-btn').removeClass('is-open');
+            }
+            else {
+                return false;
+            }    
+        });
+    } 
+
+
+    // ++++ Inits
 
     // Swiper
  
@@ -89,9 +103,49 @@ $(document).ready(function () {
 
     }
 
+    // bvideo.js
 
+    (function () {
 
+    var bv = new Bideo();
+    
+    bv.init({
+        // Video element
+        videoEl: document.querySelector('#background_video'),
 
+        // Container element
+        container: document.querySelector('body'),
+
+        // Resize
+        resize: true,
+
+        // autoplay: false,
+
+        // isMobile: window.matchMedia('(max-width: 768px)').matches,
+        // show/hide on mobile
+
+        playButton: document.querySelector('#play'),
+        pauseButton: document.querySelector('#pause'),
+
+        // Array of objects containing the src and type
+        // of different video formats to add
+        src: [
+            {
+                src: 'video/video6.mp4',
+                type: 'video/mp4'
+            },
+            {
+                src: 'night.webm',
+                type: 'video/webm;codecs="vp8, vorbis"'
+            }
+        ],
+
+        // What to do once video loads (initial frame)
+        onLoad: function () {
+            document.querySelector('#video_cover').style.display = 'none';
+        }
+    });
+    }());
 
 });
 
