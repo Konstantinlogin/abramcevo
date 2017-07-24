@@ -11,7 +11,7 @@
 
     &__menu-name
         position: relative
-        top: 2.5px
+        top: 0.1rem
         right: 10px
         font-size: 0.9em
         cursor: pointer
@@ -86,3 +86,9 @@
   
   &_close1.is-open &__line_3 
     transform: translate3d(0, -$menu-btn-to-translate, 0) rotate(-135deg)
+
+
++media($screen-small)
+  .menu-button-block
+      &__menu-name
+          top: 0

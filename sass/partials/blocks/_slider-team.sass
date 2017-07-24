@@ -105,6 +105,51 @@
     &__count
         font-size: 2rem
         display: block
+
++media($screen-small)
+    .slider-team
+        text-align: right
+        width: calc(100% - 40px)
+        padding-right: 40px
+        &__count
+            font-size: 1rem
+            display: inline-block
+        &__icon-trophy, &__icon-medal
+            display: inline-block
+            float: none
+            font-size: 25px
+            margin-bottom: 10px
+            text-align: center
+            margin-left: 40px
+            
+        &__text-count
+            width: auto
+            
+            
+
++media($screen-ex-small)
+    .slider-team
+        text-align: left
+        width: calc(100% - 20px)
+        padding-left: 20px
+        padding-right: 0
+        &__avatar-circle
+            float: none
+            margin: auto
+
+        &__arrow-left, &__arrow-right
+            font-size: 1rem
+
+        &__icon-trophy
+            margin-left: 10px
+        &__icon-medal
+            margin-left: 10px
+
+    
+
+
+
+
         
 
 
