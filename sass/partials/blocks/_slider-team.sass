@@ -102,6 +102,7 @@
         font-size: 0.9em
         width: 70px
 
+
     &__count
         font-size: 2rem
         display: block
@@ -111,19 +112,29 @@
         text-align: right
         width: calc(100% - 40px)
         padding-right: 40px
+        .content-block__link
+            float: right
+            margin-top: 2rem
         &__count
             font-size: 1rem
             display: inline-block
         &__icon-trophy, &__icon-medal
             display: inline-block
             float: none
-            font-size: 25px
-            margin-bottom: 10px
+            font-size: 32px
             text-align: center
-            margin-left: 40px
+
+
+        &__icon-medal
+            margin-top: 10px
+            position: relative
             
         &__text-count
             width: auto
+            border-top: 1px solid #ccc
+            padding-top: 1rem
+            padding-bottom: 1rem
+
             
             
 
@@ -133,17 +144,31 @@
         width: calc(100% - 20px)
         padding-left: 20px
         padding-right: 0
+        .content-block__link
+            float: left
         &__avatar-circle
-            float: none
-            margin: auto
+            width: 75px
+            height: 75px
+            border-radius: 75px
+            border: 2px solid
+            float: left
+            margin-left: 0
+
+        &__avatar-image
+            width: 73.5px
+            height: 73.5px
+            border-radius: 73.5px
+            border: 1px solid white
+            background-size: cover
+            background-repeat: no-repeat
 
         &__arrow-left, &__arrow-right
             font-size: 1rem
 
         &__icon-trophy
-            margin-left: 10px
+            // margin-left: 10px
         &__icon-medal
-            margin-left: 10px
+            // margin-left: 10px
 
     
 
