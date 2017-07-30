@@ -6,7 +6,7 @@
     max-width: 980px
     margin: 0 auto
     color: white
-    opacity: 0.9
+    // opacity: 0.9
 
     &__wrapper
         @extend .swiper-wrapper
@@ -15,6 +15,7 @@
     &__slide
         @extend .swiper-slide
         width: 100% !important
+
 
     &__arrow-left
         position: absolute
@@ -31,13 +32,12 @@
         &:before
             +icomoon
             content: "\e907"
-        &.swiper-button-disabled
-            opacity: 0.5
+
     
     &__arrow-right
         position: absolute
         right: 0
-        z-index: 3
+        z-index: 9999
         top: 50%
         color: white
         padding-top: 2em
@@ -50,9 +50,6 @@
         &:before
             +icomoon
             content: "\e90c"
-
-        &.swiper-button-disabled
-            opacity: 0.5
 
 
     &__heading

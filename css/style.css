@@ -1468,12 +1468,13 @@ small {
       display: block;
       width: 100%;
       border-bottom: 2px solid #ccc;
-      padding-bottom: 2rem;
-      margin-bottom: 2rem; }
+      padding-bottom: 2rem; }
+      .news-block__item:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0; }
       .news-block__item:first-child {
-        padding-right: 0;
-        padding-bottom: 2rem;
-        margin-bottom: 2rem; }
+        padding-right: 0; }
         .news-block__item:first-child .news-block__image {
           position: static;
           width: 100%;
@@ -1483,7 +1484,6 @@ small {
           font-weight: 500;
           margin-bottom: 0.5rem;
           display: inline-block;
-          padding-top: 2rem;
           padding-bottom: 0;
           border-top: 0;
           text-decoration: underline;
@@ -1514,8 +1514,7 @@ small {
   transform: translateY(-50%);
   max-width: 980px;
   margin: 0 auto;
-  color: white;
-  opacity: 0.9; }
+  color: white; }
   .slider-services__slide {
     width: 100% !important; }
   .slider-services__arrow-left {
@@ -1539,12 +1538,10 @@ small {
       text-transform: none;
       line-height: 1;
       content: "\e907"; }
-    .slider-services__arrow-left.swiper-button-disabled {
-      opacity: 0.5; }
   .slider-services__arrow-right {
     position: absolute;
     right: 0;
-    z-index: 3;
+    z-index: 9999;
     top: 50%;
     color: white;
     padding-top: 2em;
@@ -1562,8 +1559,6 @@ small {
       text-transform: none;
       line-height: 1;
       content: "\e90c"; }
-    .slider-services__arrow-right.swiper-button-disabled {
-      opacity: 0.5; }
   .slider-services__heading {
     font-family: 'Kurale';
     text-align: center;
@@ -1755,8 +1750,6 @@ small {
     width: calc(100% - 20px);
     padding-left: 20px;
     padding-right: 0; }
-    .slider-team .content-block__link {
-      float: left; }
     .slider-team__avatar-circle {
       width: 75px;
       height: 75px;
@@ -1897,7 +1890,7 @@ small {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 3;
+  z-index: -1;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
   transition-property: -webkit-transform;
@@ -1913,12 +1906,16 @@ small {
   transition-delay: 0.3s;
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0); }
+  .nav .nav__menu {
+    display: none; }
   .nav.is-active {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     -webkit-transition-delay: 0s;
     -o-transition-delay: 0s;
     transition-delay: 0s; }
+    .nav.is-active .nav__menu {
+      display: block; }
   .nav__menu-title {
     position: relative;
     top: 81px;
