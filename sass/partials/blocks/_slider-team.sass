@@ -12,7 +12,8 @@
 
     &__slide
         @extend .swiper-slide
-
+        position: relative
+        z-index: 2
 
     &__content
         max-width: 840px
@@ -20,13 +21,22 @@
 
     &__arrow-left
         position: absolute
-        top: 50%
-        transform: translate(0, -50%)
         left: 0
+        top: 0
         z-index: 3
+        height: 100%
+        width: 2rem
         color: #333
         cursor: pointer
         font-size: 1.5rem
+        text-align: center
+
+    &__arrow-icon-left
+        position: relative
+        top: 50%
+        transform: translate(0, -50%)
+        color: #333
+        display: inline-block
         &:before
             +icomoon
             content: "\e907"
@@ -35,23 +45,27 @@
     
     &__arrow-right
         position: absolute
-        top: 50%
-        transform: translate(0, -50%)
         right: 0
+        top: 0
         z-index: 3
+        height: 100%
+        width: 2rem
         color: #333
-        padding-top: 2em
-        padding-left: 2em
-        padding-bottom: 2em
         cursor: pointer
         font-size: 1.5rem
+        text-align: center
+        
 
+    &__arrow-icon-right
+        position: relative
+        top: 50%
+        transform: translate(0, -50%)
+        color: #333
+        display: inline-block
+        
         &:before
             +icomoon
             content: "\e90c"
-
-        &.swiper-button-disabled
-            opacity: 0.5
 
 
     &__avatar-circle
@@ -119,6 +133,8 @@
             font-size: 1rem
             display: inline-block
         &__icon-trophy, &__icon-medal
+            position: relative
+            top: 0.5rem
             display: inline-block
             float: none
             font-size: 32px
@@ -131,19 +147,22 @@
             
         &__text-count
             width: auto
-            border-top: 1px solid #ccc
+            
             padding-top: 1rem
             padding-bottom: 1rem
 
+        &__achievments
+    
+            
             
             
 
 +media($screen-ex-small)
     .slider-team
-        text-align: left
-        width: calc(100% - 20px)
+        // text-align: left
+        width: calc(100% - 40px)
         padding-left: 20px
-        padding-right: 0
+        padding-right: 20px
         .content-block__link
             // float: left
         &__avatar-circle
@@ -152,7 +171,7 @@
             border-radius: 75px
             border: 2px solid
             float: left
-            margin-left: 0
+            margin: 0
 
         &__avatar-image
             width: 73.5px
