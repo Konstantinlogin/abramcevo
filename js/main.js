@@ -43,11 +43,8 @@ $(document).ready(function () {
                 closeMenu();
                 $('.menu-btn').removeClass('is-open');
             }
-            else {
-                return false;
-            }    
         });
-    } 
+    }
 
     $(".scroll-to-bottom").on("click", function (event) {
         event.preventDefault();
@@ -55,6 +52,26 @@ $(document).ready(function () {
             top = $(id).offset().top;
             $('body,html').animate({scrollTop: top}, 500);
     });
+
+    $('.search').find('.search__input').bind('keyup paste change', function(){
+        var isEmpty = true;
+        if(isEmpty = true && $.trim( this.value ) === "") {
+            isEmpty = false;
+        }
+        else {
+            isEmpty = true;
+        }
+        showHideSubmit(isEmpty, $(this).next('.search__submit'));
+    });
+
+    function showHideSubmit(variable, obj) {
+        if (variable == true) {
+            obj.addClass('is-active')
+        }
+        else {
+            obj.removeClass('is-active')
+        }
+    }
 
     // ++++ Inits
 

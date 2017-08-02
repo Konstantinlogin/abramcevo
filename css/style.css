@@ -1281,7 +1281,8 @@ small {
     text-align: right; }
   .page-header__title {
     display: inline-block;
-    font-family: 'Kurale'; }
+    font-family: 'Kurale';
+    font-size: 2rem; }
     .page-header__title:after {
       content: '';
       display: block;
@@ -1308,7 +1309,8 @@ small {
       border-bottom: 1px solid #ccc;
       width: 100%;
       padding-bottom: 0.8rem;
-      padding-top: 0.8rem; }
+      padding-top: 0.8rem;
+      font-size: 1.5rem; }
       .page-header__title:after, .page-header__title:before {
         display: none; } }
 
@@ -1808,7 +1810,7 @@ small {
   display: block;
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
@@ -1825,7 +1827,7 @@ small {
   position: absolute; }
   .menu-button-block.is-active {
     position: fixed;
-    color: white; }
+    color: #ccc; }
   .menu-button-block__button {
     display: block;
     float: right; }
@@ -1840,7 +1842,7 @@ small {
     -ms-user-select: none;
     user-select: none; }
     .menu-button-block__menu-name.is-active {
-      color: white; }
+      color: #ccc; }
 
 .menu-btn {
   position: relative;
@@ -1849,7 +1851,7 @@ small {
   cursor: pointer;
   overflow: hidden; }
   .menu-btn.is-active .menu-btn__line {
-    background-color: white; }
+    background-color: #ccc; }
   .menu-btn__icon {
     position: absolute;
     width: 25px;
@@ -1994,7 +1996,7 @@ small {
     background-color: rgba(0, 0, 0, 0.99); }
     .nav__container {
       position: absolute;
-      top: 50%;
+      top: calc(50% - 60px);
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -2086,6 +2088,19 @@ small {
     position: absolute;
     left: 0;
     font-size: 1.3em; }
+  .search__submit {
+    background: transparent;
+    border: 1px solid;
+    border-radius: 2px;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .search__submit.is-active {
+      opacity: 1;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
 
 @media screen and (max-width: 768px) {
   .search {

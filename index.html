@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
-    <title>КRRR</title>
+    <title>KCKA</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/libs/jquery.min.js"></script>
     <script src="js/plugins/bideo.js"></script>
@@ -18,16 +18,20 @@
 
 <body>
     <div class="lo-wrapper">
+
+        <!-- +++ HEADER +++ -->
+
         <header class="header header_white">
             <div class="header__left">
                 <div class="social">
                     <a href="#" class="social__link-vk"></a>
                     <a href="#" class="social__link-inst"></a>
                 </div>
-                <div class="search">
+                <form class="search">
                     <i class="search__icon"></i>
                     <input type="text" placeholder="Поиск по сайту" class="search__input" />
-                </div>
+                    <input type="submit" class="search__submit" value='найти'/>
+                </form>
                 <span class="phone"><i class="phone__icon"></i>+7 985 1345795</span>
                 <span class="work-time"><i class="work-time__icon"></i>пн-пт с 9:00 до 20:00</span>
             </div>
@@ -50,7 +54,7 @@
                     </div>
                 </div>
                 <address class="address pt-50"><i class="address__icon"></i>Сергиево-посадский район, дер. Жучки</address>
-                <span class="email"><i class="email__icon"></i><a href="#" class="email__link">Abramcevo@mail.ru</a></span>
+                <span class="email"><i class="email__icon"></i><a href="#" class="email__link">abramcevo@mail.ru</a></span>
             </div>
             <nav class="nav header__nav">
                 <div class="nav__container">
@@ -58,23 +62,26 @@
                     <div class="nav__menu-container">
                         <ul class="nav__menu">
                             <li>
-                                <a class="is-active" href="#1123">Главная</a>
+                                <a class="is-active" href="index.html">Главная</a>
                             </li>
                             <li>
-                                <a href="#2">Наша команда</a>
+                                <a href="layout.html">Layout</a>
                             </li>
                             <li>
-                                <a href="#3">Контакты</a>
+                                <a href="#">Наша команда</a>
                             </li>
                             <li>
-                                <a href="#4">Услуги</a>
+                                <a href="#">Контакты</a>
                             </li>
                             <li>
-                                <a href="#5">О нас</a>
+                                <a href="#">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="5">О нас</a>
                             </li>
 
                             <li>
-                                <a href="#6">Новости</a>
+                                <a href="#">Новости</a>
                             </li>
                         </ul>
                         <div class="nav__menu-overlay"></div>
@@ -82,6 +89,9 @@
                 </div>
             </nav>
         </header>
+
+        <!-- /// HEADER /// -->
+
         <div class="video-controls">
             <span class="video-controls__play" id="play">
                 <img alt="play">
@@ -91,7 +101,10 @@
             </span>
         </div>
 
+        <!-- +++ CONTENT +++ -->
+
         <main class="content">
+
             <section class="section section_head-main">
                 <div class="bg-video">
                     <video class="bg-video__video" id="background_video" loop muted></video>
@@ -135,7 +148,6 @@
                         <span class="slider-services__arrow-icon-right"></span>
                     </span>
                 </div>
-
                 <a href="#about" class="scroll-to-bottom"></a>
             </section>
 
@@ -157,6 +169,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="section section_content">
                 <div class="page-header">
                     <h1 class="page-header__title">Наша команда</h1>
@@ -201,6 +214,7 @@
                     </span>
                 </div>
             </section>
+
             <section class="section section_content">
                 <div class="page-header">
                     <h1 class="page-header__title">Новости</h1>
@@ -236,6 +250,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="section section_content">
                 <div class="page-header">
                     <h1 class="page-header__title">Контакты</h1>
@@ -257,9 +272,13 @@
                     <div class="yandex-map-block__map" id="map"> </div>
                 </div>
             </section>
+
         </main>
+        <!-- /// CONTENT /// -->
+
       </div><!--//WRAPPER-->
 
+        <!-- +++ FOOTER +++ -->
         <footer class="footer">
             <div class="footer__container">
                 <div class="footer__left">
@@ -293,7 +312,8 @@
                 </div>
             </div>
         </footer>
-  
+
+        <!-- /// FOOTER /// -->
 
 </body>
 
