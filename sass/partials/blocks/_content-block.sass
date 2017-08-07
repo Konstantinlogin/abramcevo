@@ -41,6 +41,18 @@
 
     &__image
         width: calc(100% - 10px)
+        &_left
+            float: left
+            max-width: 480px
+            width: calc(100% - 20px)
+            margin-right: 20px
+
+        &_right
+            float: right
+            max-width: 480px
+            width: calc(100% - 20px)
+            margin-right: 20px
+
 
     &__text
         @extend %base-text
@@ -69,6 +81,10 @@
 
         &__image
             width: 100%
+            &_left, &_right
+                float: none
+                display: block
+                max-width: 100%
 
         &__text
 
@@ -84,5 +100,7 @@
         display: block
         &__link
             margin-top: 1rem
+
+    
 
 
