@@ -1,3 +1,5 @@
+var isIOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
 $(document).ready(function () {
 
     var menuNameText = $('.menu-button-block__menu-name').text();
