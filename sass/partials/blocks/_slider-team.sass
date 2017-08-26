@@ -18,6 +18,8 @@
     &__content
         max-width: 840px
         margin: auto
+        padding-left: 220px
+        padding-right: 20px
 
     &__arrow-left
         position: absolute
@@ -69,13 +71,15 @@
 
 
     &__avatar-circle
+        position: absolute
+        left: 0
+        top: 0
         width: 109px
         height: 109px
         border-radius: 109px
         border: 2px solid
-        float: left
         margin-top: 1em
-        margin-left: 2em
+        margin-left: 80px
         margin-right: 1em
 
     &__avatar-image
@@ -126,6 +130,11 @@
         text-align: right
         width: calc(100% - 40px)
         padding-right: 40px
+        &__content
+            padding-left: 0
+            padding-right: 0
+        &__heading
+            padding-left: 70px
         .content-block__link
             float: right
             margin-top: 2rem

@@ -29,6 +29,11 @@
         display: inline-block
         &_center
             text-align: center
+    &__col-80
+        width: 80%
+        display: inline-block
+        &_center
+            text-align: center
     &__col-100
         width: 100%
         display: inline-block
@@ -56,6 +61,8 @@
 
     &__text
         @extend %base-text
+        &_cursive
+            font-style: italic
 
 
     &__link
