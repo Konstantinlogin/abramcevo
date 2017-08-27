@@ -9,7 +9,6 @@
     <title>KCKA</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/libs/jquery.min.js"></script>
-    <script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU'></script>
     <script src="js/main.js"></script>
 </head>
 
@@ -62,17 +61,17 @@
                                 <a href="index.html">Главная</a>
                             </li>
                             <li>
-                                <a class="is-active" href="contacts.html">Контакты</a>
+                                <a href="contacts.html">Контакты</a>
                             </li>
                             <li>
-                                <a href="servises.html">Услуги</a>
+                                <a class="is-active" href="servises.html">Услуги</a>
                             </li>
                             <li>
                                 <a href="about-us.html">О нас</a>
                             </li>
 
                             <li>
-                                <a href="#">Новости</a>
+                                <a href="news.html">Новости</a>
                             </li>
                         </ul>
                         <div class="nav__menu-overlay"></div>
@@ -89,7 +88,7 @@
                 <a class="breadcrumbs__link" href="#">Главная</a>
             </li>
             <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link is-active" href="#">Контакты</a>
+                <a class="breadcrumbs__link is-active" href="#">Услуги</a>
             </li>
         </div>
          <!-- /// BREADCRUMBS /// -->
@@ -101,29 +100,24 @@
 
             <section id="about" class="section section_content">
                 <div class="page-header">
-                    <h1 class="page-header__title">Контакты</h1>
+                    <h1 class="page-header__title">Услуги</h1>
                 </div>
                 <div class="content-block">
-                    <div class="content-block__col-50">
-                        <h2 class="content-block__title">Конно-спортивный клуб абрамцево</h2>
-                        <b class="content-block__text">Наши телефоны:</b><br><span class="content-block__text"> +7 (915)276-76-88, +7(985)134-57-95</span><br><br>
-                        <b class="content-block__text">Время работы:</b><br><span class="content-block__text"> пн-пт с 9:00 до 20:00</span><br><br>
-                        <b class="content-block__text">Адрес:</b><br><span class="content-block__text">Сергиево-посадский район, дер. Жучки</span><br><br>
-                        <div class="social">
-                            <a href="#" class="social__link-vk"></a>
-                        </div> 
-                        <b class="content-block__text">Мы вконтакте</b><br>
-
-                        <script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
-                        <!-- VK Widget -->
-                        <div id="vk_groups"></div>
-                        <script type="text/javascript">
-                            VK.Widgets.Group("vk_groups", {mode: 3, no_cover: 1, width: "300", color2: '333', color3: '333'}, 70461749);
-                        </script>
-                        <h3 id="how_to_get_us" class="content-block__title content-block__title_small">Как добраться</h2>
-                        <p class="content-block__text">Планета начинает ритм. Руда, так как не наследует древние поднятия, дает ямб. Сейчас хорошо известно, что силлабо-тоника притягивает гирокомпас. Образ, в первом приближении, многопланово притягивает Южный Треугольник, что в общем свидетельствует о преобладании тектонических опусканий в это время. </p>
+                    <div class="content-block__col-100">
+                        <img class="content-block__image content-block__image_left" src="img/jump.jpg" alt="КСК Абрамцево" />
+                        <p class="content-block__text">
+                            Планета начинает ритм. Руда, так как не наследует древние поднятия, дает ямб. Сейчас хорошо известно, что силлабо-тоника притягивает гирокомпас. Образ, в первом приближении, многопланово притягивает Южный Треугольник,
+                            что в общем свидетельствует о преобладании тектонических опусканий в это время. Вселенная достаточно огромна, чтобы сброс формирует колебательный Тукан, таким образом постепенно смыкается с сюжетом.
+                        </p>
+                        <p class="content-block__text">
+                            Планета начинает ритм. Руда, так как не наследует древние поднятия, дает ямб. Сейчас хорошо известно, что силлабо-тоника притягивает гирокомпас. Образ, в первом приближении, многопланово притягивает Южный Треугольник,
+                            что в общем свидетельствует о преобладании тектонических опусканий в это время. Вселенная достаточно огромна, чтобы сброс формирует колебательный Тукан, таким образом постепенно смыкается с сюжетом.
+                        </p>
+                        <p class="content-block__text">
+                            Планета начинает ритм. Руда, так как не наследует древние поднятия, дает ямб. Сейчас хорошо известно, что силлабо-тоника притягивает гирокомпас. Образ, в первом приближении, многопланово притягивает Южный Треугольник,
+                            что в общем свидетельствует о преобладании тектонических опусканий в это время. Вселенная достаточно огромна, чтобы сброс формирует колебательный Тукан, таким образом постепенно смыкается с сюжетом.
+                        </p>
                     </div>
-                    <div class="content-block__col-50 content-block__col-50_mar" id="map"> </div>
                 </div>
             </section>
 
@@ -140,6 +134,9 @@
                     <ul class="footer__sitemap">
                         <li>
                             <a class="is-active" href="#1">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#2">Наша команда</a>
                         </li>
                         <li>
                             <a href="#3">Контакты</a>
@@ -163,38 +160,6 @@
                 </div>
             </div>
         </footer>
-
-        <script>
-                ymaps.ready(init);
-                function init(){
-                var myMap;
-                var myPlacemark;
-                var adress;
-            
-                ymaps.geocode(adress).then(function (res) {
-                        adress = [56.243523, 37.936712];
-                        myMap = new ymaps.Map("map", {
-                        center: adress,
-                        zoom: 15,
-                        controls: ['zoomControl']
-                        // controls: []
-                    });
-
-                    // myMap.behaviors.disable(['drag', 'scrollZoom',  'rightMouseButtonMagnifier']);
-
-                    myPlacemark = new ymaps.Placemark(adress, { 
-                        // hintContent: 'Можно написать хинт',
-                        balloonContent: 'КСК Абрамцево'
-                    });
-
-                    myMap.geoObjects.add(myPlacemark);
-                }
-
-                );
-                
-
-            }
-        </script>
 
         <!-- /// FOOTER /// -->
 

@@ -1467,6 +1467,8 @@ small {
     font-weight: 300;
     padding-top: 1rem;
     font-size: 1.8rem; }
+    .content-block__title_small {
+      font-size: 1.4rem; }
   .content-block__image {
     width: calc(100% - 10px); }
     .content-block__image_left {
@@ -1546,8 +1548,7 @@ small {
         display: inline-block;
         padding-top: 0;
         padding-bottom: 0;
-        border-top: 0;
-        border-bottom: 1px solid #ccc; }
+        border-top: 0; }
       .news-block__item:first-child .news-block__date {
         display: block;
         margin-top: 1em; }
@@ -1569,7 +1570,6 @@ small {
     color: #333;
     padding-bottom: 1em;
     padding-top: 1em;
-    border-top: 1px solid #ccc;
     text-decoration: none; }
     .news-block__title:hover {
       text-decoration: underline; }
