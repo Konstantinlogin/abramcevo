@@ -892,7 +892,7 @@ button.swiper-pagination-bullet {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
-.content-block__text, .news-block__text, .slider-team__text, .slider-team__text-count {
+.content-block__text, .content-block p, .news-block__text, .slider-team__text, .slider-team__text-count {
   font-family: 'Roboto';
   color: #333;
   line-height: 1.5; }
@@ -1378,19 +1378,6 @@ small {
       .page-header__title:after, .page-header__title:before {
         display: none; } }
 
-.content-block h1, .content-block h2, .content-block h3, .content-block h4, .content-block h5, .content-block h6 {
-  font-weight: 300;
-  padding-top: 1rem; }
-
-.content-block h1 {
-  font-size: 1.8rem; }
-
-.content-block h2 {
-  font-size: 1.4rem; }
-
-.content-block h3, .content-block h4, .content-block h5, .content-block h6 {
-  font-size: 1rem; }
-
 .content-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1493,6 +1480,35 @@ small {
     display: block; }
     .content-block__link {
       margin-top: 1rem; } }
+
+.content-block h1, .content-block h2, .content-block h3, .content-block h4, .content-block h5, .content-block h6 {
+  font-weight: 300;
+  padding-top: 1rem; }
+
+.content-block h1 {
+  font-size: 1.8rem; }
+
+.content-block h2 {
+  font-size: 1.4rem; }
+
+.content-block h3, .content-block h4, .content-block h5, .content-block h6 {
+  font-size: 1rem; }
+
+.content-block img {
+  max-width: 480px; }
+
+.content-block img[style*="float:left"], .content-block img[style*="float: left"], .content-block img[style*=" float: left"], .content-block img[style*=" float : left"], .content-block img[style*=" float :left"] {
+  margin-right: 20px; }
+
+.content-block img[style*="float:right"], .content-block img[style*="float: right"], .content-block img[style*=" float: right"], .content-block img[style*=" float : right"], .content-block img[style*=" float :right"] {
+  margin-left: 20px; }
+
+@media screen and (max-width: 768px) {
+  .content-block img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 100%; } }
 
 .news-block {
   max-width: 980px;
