@@ -191,4 +191,14 @@
     content: $icon-clock;
   }
 }
+.icon-ticket {
+  &:before {
+    content: $icon-ticket;
+  }
+}
+.icon-ticket2 {
+  &:before {
+    content: $icon-ticket2;
+  }
+}
 

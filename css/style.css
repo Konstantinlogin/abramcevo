@@ -405,6 +405,12 @@ html, body {
 .icon-clock:before, .work-time__icon:before {
   content: ""; }
 
+.icon-ticket:before, .services-list__abonements-icon:before {
+  content: ""; }
+
+.icon-ticket2:before {
+  content: ""; }
+
 .swiper-container, .slider-services, .slider-team {
   margin-left: auto;
   margin-right: auto;
@@ -897,11 +903,11 @@ button.swiper-pagination-bullet {
   color: #333;
   line-height: 1.5; }
 
-.email__link, .yandex-map-block__link, .content-block__link, .news-block__link, .nav__menu li a {
+.email__link, .yandex-map-block__link, .services-list__readmore, .content-block__link, .news-block__link, .nav__menu li a {
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid; }
-  .email__link:hover, .yandex-map-block__link:hover, .content-block__link:hover, .news-block__link:hover, .nav__menu li a:hover {
+  .email__link:hover, .yandex-map-block__link:hover, .services-list__readmore:hover, .content-block__link:hover, .news-block__link:hover, .nav__menu li a:hover {
     opacity: 0.6;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -1379,12 +1385,31 @@ small {
   display: block;
   margin-top: 1.5rem; }
   .services-list__abonements-title {
+    position: relative;
+    left: 1rem;
     font-weight: bold; }
+  .services-list__abonements-price {
+    display: inline-block;
+    position: relative;
+    left: 1rem; }
+    .services-list__abonements-price:after {
+      content: " . ";
+      vertical-align: super;
+      font-weight: 500;
+      color: #ccc;
+      font-size: 2rem; }
+    .services-list__abonements-price:last-child:after {
+      content: ""; }
+  .services-list__abonements-icon {
+    font-family: icomoon !important;
+    font-size: 2rem;
+    position: relative;
+    top: .25rem; }
   .services-list__abonements:before {
     content: "";
     display: block;
     width: 120px;
-    margin: 20px auto;
+    margin: 5px auto;
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%);

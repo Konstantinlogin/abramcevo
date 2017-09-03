@@ -46,16 +46,40 @@
             position: relative
             top: .5rem
 
+    &__readmore
+        @extend %base-link
+
     &__abonements
         display: block
         margin-top: 1.5rem
         &-title
+            position: relative
+            left: 1rem
             font-weight: bold
+        &-price
+            display: inline-block
+            position: relative
+            left: 1rem
+            &:after
+                content: " . "
+                vertical-align: super
+                font-weight: 500
+                color: #ccc
+                font-size: 2rem
+            &:last-child
+                &:after
+                    content: ""
+        &-icon
+            font-family: icomoon !important
+            @extend .icon-ticket
+            font-size: 2rem
+            position: relative
+            top: .25rem
         &:before
             content: ""
             display: block
             width: 120px
-            margin: 20px auto
+            margin: 5px auto
             transform: translateX(50%)
             height: 1px
             background-color: #ccc
