@@ -3,8 +3,23 @@
     display: -ms-flex
     display: -webkit-flex
     flex-wrap: wrap
+    width: 100%
     max-width: 980px
     margin: auto
+    box-sizing: border-box
+    &_checkmates
+        margin-bottom: 40px
+        .content-block__bg-image
+            float: right
+        &:nth-child(even)
+            flex-direction: row-reverse
+            
+            .content-block__link
+                float: right
+            .content-block__bg-image
+                float: left
+
+
     &_valign-middle
         align-content: center
         align-items: center
@@ -90,6 +105,59 @@
             text-align: center
             display: inline-block
 
+    &__bg-image
+        width: calc(100% - 20px)
+        margin: 20px auto
+        display: block
+        height: 290px
+        background-size: cover
+
+        background-repeat: no-repeat
+
+    &__price
+        display: inline-block
+        margin-bottom: 20px
+        &:before
+            content: "\e90d"
+            display: inline-block
+            margin-right: 10px
+            font-family: icomoon !important
+            font-size: 2rem
+            position: relative
+            top: .25rem
+    &__abonements
+        display: inline-block
+        font-weight: 500
+        &:before
+            content: $icon-ticket
+            display: inline-block
+            margin-right: 10px
+            font-family: icomoon !important
+            font-size: 2rem
+            position: relative
+            top: .25rem
+    &__abonement
+        display: inline-block
+        width: calc(100% - 3rem)
+        
+        margin-left: calc(2rem + 10px)
+        margin-top: 2.5px
+        margin-bottom: 2.5px
+        
+    &__separator
+        display: block
+        width: 90px
+        height: 1px
+        border-top: 1px solid #ccc
+        margin-left: calc(2rem + 10px)
+        margin-right: calc(2rem + 10px)
+        margin-top: 20px
+        margin-bottom: 10px
+
+
+
+
+
 +media($screen-small)
     .content-block
         display: block
@@ -110,6 +178,10 @@
                 float: none
                 display: block
                 max-width: 100%
+        &__bg-image
+            float: none
+            width: 100%
+
 
         &__text
 

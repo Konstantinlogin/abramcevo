@@ -1472,8 +1472,25 @@ small {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  width: 100%;
   max-width: 980px;
-  margin: auto; }
+  margin: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .content-block_checkmates {
+    margin-bottom: 40px; }
+    .content-block_checkmates .content-block__bg-image {
+      float: right; }
+    .content-block_checkmates:nth-child(even) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; }
+      .content-block_checkmates:nth-child(even) .content-block__link {
+        float: right; }
+      .content-block_checkmates:nth-child(even) .content-block__bg-image {
+        float: left; }
   .content-block_valign-middle {
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
@@ -1544,6 +1561,50 @@ small {
     .content-block__link_center {
       text-align: center;
       display: inline-block; }
+  .content-block__bg-image {
+    width: calc(100% - 20px);
+    margin: 20px auto;
+    display: block;
+    height: 290px;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .content-block__price {
+    display: inline-block;
+    margin-bottom: 20px; }
+    .content-block__price:before {
+      content: "\e90d";
+      display: inline-block;
+      margin-right: 10px;
+      font-family: icomoon !important;
+      font-size: 2rem;
+      position: relative;
+      top: .25rem; }
+  .content-block__abonements {
+    display: inline-block;
+    font-weight: 500; }
+    .content-block__abonements:before {
+      content: "";
+      display: inline-block;
+      margin-right: 10px;
+      font-family: icomoon !important;
+      font-size: 2rem;
+      position: relative;
+      top: .25rem; }
+  .content-block__abonement {
+    display: inline-block;
+    width: calc(100% - 3rem);
+    margin-left: calc(2rem + 10px);
+    margin-top: 2.5px;
+    margin-bottom: 2.5px; }
+  .content-block__separator {
+    display: block;
+    width: 90px;
+    height: 1px;
+    border-top: 1px solid #ccc;
+    margin-left: calc(2rem + 10px);
+    margin-right: calc(2rem + 10px);
+    margin-top: 20px;
+    margin-bottom: 10px; }
 
 @media screen and (max-width: 768px) {
   .content-block {
@@ -1558,7 +1619,10 @@ small {
       .content-block__image_left, .content-block__image_right {
         float: none;
         display: block;
-        max-width: 100%; } }
+        max-width: 100%; }
+    .content-block__bg-image {
+      float: none;
+      width: 100%; } }
 
 @media screen and (max-width: 480px) {
   .content-block {
