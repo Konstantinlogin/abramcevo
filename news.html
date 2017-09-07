@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="format-detection" content="telephone=no">
     <title>KCKA</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/libs/jquery.min.js"></script>
@@ -54,20 +53,20 @@
                     <div class="nav__menu-container">
                         <ul class="nav__menu">
                             <li>
-                                <a href="index.html">Главная</a>
+                                <a class="is-active" href="index.html">Главная</a>
                             </li>
                             <li>
                                 <a href="contacts.html">Контакты</a>
                             </li>
                             <li>
-                                <a href="services.html">Услуги</a>
+                                <a href="servises.html">Услуги</a>
                             </li>
                             <li>
-                                <a class="is-active" href="about-us.html">О нас</a>
+                                <a href="about-us.html">О нас</a>
                             </li>
 
                             <li>
-                                <a href="#">Новости</a>
+                                <a href="news.html">Новости</a>
                             </li>
                         </ul>
                         <div class="nav__menu-overlay"></div>
@@ -84,7 +83,7 @@
                 <a class="breadcrumbs__link" href="#">Главная</a>
             </li>
             <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link is-active" href="#">О нас</a>
+                <a class="breadcrumbs__link is-active" href="#">Layout</a>
             </li>
         </div>
          <!-- /// BREADCRUMBS /// -->
@@ -96,30 +95,61 @@
 
             <section id="about" class="section section_content">
                 <div class="page-header">
-                    <h1 class="page-header__title">О нас</h1>
+                    <h1 class="page-header__title">Новости</h1>
                 </div>
                 <div class="content-block">
                     <div class="content-block__col-100">
-
-                        <img style="float: left" src="img/jump.jpg" alt="КСК Абрамцево" />
-                        <h2>Любовь к своему делу</h2>
-                        <p>
+                        <img class="content-block__image content-block__image_left" src="img/jump.jpg" alt="КСК Абрамцево" />
+                        <p class="content-block__text">
                             Планета начинает ритм. Руда, так как не наследует древние поднятия, дает ямб. Сейчас хорошо известно, что силлабо-тоника притягивает гирокомпас. Образ, в первом приближении, многопланово притягивает Южный Треугольник,
                             что в общем свидетельствует о преобладании тектонических опусканий в это время. Вселенная достаточно огромна, чтобы сброс формирует колебательный Тукан, таким образом постепенно смыкается с сюжетом.
                         </p>
-                        <p>
+                        <p class="content-block__text">
                             Планета начинает ритм. Руда, так как не наследует древние поднятия, дает ямб. Сейчас хорошо известно, что силлабо-тоника притягивает гирокомпас. Образ, в первом приближении, многопланово притягивает Южный Треугольник,
                             что в общем свидетельствует о преобладании тектонических опусканий в это время. Вселенная достаточно огромна, чтобы сброс формирует колебательный Тукан, таким образом постепенно смыкается с сюжетом.
                         </p>
-                        <h2>Профессиональный подход</h2>
-                        <p>
-                            <img style="float: right" src="img/horses.jpg" alt="КСК Абрамцево" />
+                        <p class="content-block__text">
                             Планета начинает ритм. Руда, так как не наследует древние поднятия, дает ямб. Сейчас хорошо известно, что силлабо-тоника притягивает гирокомпас. Образ, в первом приближении, многопланово притягивает Южный Треугольник,
                             что в общем свидетельствует о преобладании тектонических опусканий в это время. Вселенная достаточно огромна, чтобы сброс формирует колебательный Тукан, таким образом постепенно смыкается с сюжетом.
                         </p>
                     </div>
                 </div>
             </section>
+            <!--<section class="section section_content">
+                <div class="page-header">
+                    <h1 class="page-header__title">Наша команда</h1>
+                </div>
+                <div class="slider-team">
+                    <div class="slider-team__wrapper swiper-wrapper">
+                        <div class="slider-team__slide">
+                            <div class="slider-team__content">
+                                <div class="content-block content-block_valign-middle">
+                                    <div class="content-block__col-100">
+                                        <div class="slider-team__avatar-circle">
+                                            <div style="background-image: url(img/dasha.jpg)" class="slider-team__avatar-image"></div>
+                                        </div>
+                                        <h2 class="slider-team__heading">Дарья Григоренко</h2>
+                                        <p class="content-block__text">
+                                            Она с детсва любит лошадей. Это её страсть. Это её жизнь. На соревнованиях её ученики занимают только призовые места.
+                                        </p>                           
+                                        <p class="content-block__text content-block__text_cursive"><b>Специализации:</b> Обучение верховой езде, свадебные фотосессии, Ипотерапия, Уход за лошадью, постой лошади, организация выездов, выездка, подковка, расчесать, умыть, покормить коня</p>
+                                    </div>
+                                    <div class="content-block__col-100 content-block__col-100_center">
+                                        <a href="#" class="content-block__link content-block__link_right">Страница тренера</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <span class="slider-team__arrow-left">
+                               <span class="slider-team__arrow-icon-left"></span>
+                    </span>
+                    <span class="slider-team__arrow-right">
+                        <span class="slider-team__arrow-icon-right"></span>
+                    </span>
+                </div>
+            </section>-->
 
         </main>
         <!-- /// CONTENT /// -->
@@ -133,7 +163,7 @@
                     <span class="footer__sitemap-tag">Карта сайта:</span>
                     <ul class="footer__sitemap">
                         <li>
-                            <a class="is-active" href="#1">Главная</a>
+                            <a href="#1">Главная</a>
                         </li>
                         <li>
                             <a href="#2">Наша команда</a>
@@ -148,7 +178,7 @@
                             <a href="#5">О нас</a>
                         </li>
                         <li>
-                            <a href="#6">Новости</a>
+                            <a class="is-active" href="#6">Новости</a>
                         </li>
                     </ul>
                 </div>

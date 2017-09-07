@@ -5,7 +5,9 @@
     display: flex
     display: -webkit-flex
     display: -ms-flex
-    width: 100%
+    width: calc(100% - 10px)
+    padding-right: 5px
+    padding-left: 5px
     max-width: 980px
     margin: 0 auto
     height: $header-height
@@ -84,6 +86,11 @@
     .header
         display: block
         min-height: 420px
+
+        &__title
+            border: none
+
+
         &__right, &__left
             display: block
             border-bottom: none
