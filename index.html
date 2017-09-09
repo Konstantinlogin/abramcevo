@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
     <title>KCKA</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/libs/jquery.min.js"></script>
@@ -25,9 +26,9 @@
                 <form class="search">
                     <i class="search__icon"></i>
                     <input type="text" placeholder="Поиск по сайту" class="search__input" />
-                    <input type="submit" class="search__submit" value='найти'/>
+                    <input type="submit" class="search__submit" value='найти' />
                 </form>
-                <span class="phone"><i class="phone__icon"></i>+7 985 1345795</span>
+                <span class="phone"><i class="phone__icon"></i><a href="tel:+7 985 1345795">+7 985 1345795</a></span>
                 <span class="work-time"><i class="work-time__icon"></i>пн-пт с 9:00 до 20:00</span>
             </div>
             <div class="header__center">
@@ -101,14 +102,24 @@
                     <div class="bg-video__video-overlay"></div>
                     <div id="background_video_preloader" class="bg-video__video-preloader">
                         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-                        <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve"><g><path d="M59.6 0h8v40h-8V0z" fill="#000"/><path d="M59.6 0h8v40h-8V0z" fill="#ccc" transform="rotate(30 64 64)"/><path d="M59.6 0h8v40h-8V0z" fill="#ccc" transform="rotate(60 64 64)"/><path d="M59.6 0h8v40h-8V0z" fill="#ccc" transform="rotate(90 64 64)"/><path d="M59.6 0h8v40h-8V0z" fill="#ccc" transform="rotate(120 64 64)"/><path d="M59.6 0h8v40h-8V0z" fill="#b2b2b2" transform="rotate(150 64 64)"/>
-                        <path d="M59.6 0h8v40h-8V0z" fill="#999" transform="rotate(180 64 64)"/>
-                        <path d="M59.6 0h8v40h-8V0z" fill="#7f7f7f" transform="rotate(210 64 64)"/>
-                        <path d="M59.6 0h8v40h-8V0z" fill="#666" transform="rotate(240 64 64)"/>
-                        <path d="M59.6 0h8v40h-8V0z" fill="#4c4c4c" transform="rotate(270 64 64)"/>
-                        <path d="M59.6 0h8v40h-8V0z" fill="#333" transform="rotate(300 64 64)"/>
-                        <path d="M59.6 0h8v40h-8V0z" fill="#191919" transform="rotate(330 64 64)"/>
-                        <animateTransform attributeName="transform" type="rotate" values="0 64 64;30 64 64;60 64 64;90 64 64;120 64 64;150 64 64;180 64 64;210 64 64;240 64 64;270 64 64;300 64 64;330 64 64" calcMode="discrete" dur="1320ms" repeatCount="indefinite"></animateTransform></g>
+                        <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve">
+                            <g>
+                                <path d="M59.6 0h8v40h-8V0z" fill="#000" />
+                                <path d="M59.6 0h8v40h-8V0z" fill="#ccc" transform="rotate(30 64 64)" />
+                                <path d="M59.6 0h8v40h-8V0z" fill="#ccc" transform="rotate(60 64 64)" />
+                                <path d="M59.6 0h8v40h-8V0z" fill="#ccc" transform="rotate(90 64 64)" />
+                                <path d="M59.6 0h8v40h-8V0z" fill="#ccc" transform="rotate(120 64 64)" />
+                                <path d="M59.6 0h8v40h-8V0z" fill="#b2b2b2" transform="rotate(150 64 64)" />
+                                <path d="M59.6 0h8v40h-8V0z" fill="#999" transform="rotate(180 64 64)" />
+                                <path d="M59.6 0h8v40h-8V0z" fill="#7f7f7f" transform="rotate(210 64 64)" />
+                                <path d="M59.6 0h8v40h-8V0z" fill="#666" transform="rotate(240 64 64)" />
+                                <path d="M59.6 0h8v40h-8V0z" fill="#4c4c4c" transform="rotate(270 64 64)" />
+                                <path d="M59.6 0h8v40h-8V0z" fill="#333" transform="rotate(300 64 64)" />
+                                <path d="M59.6 0h8v40h-8V0z" fill="#191919" transform="rotate(330 64 64)" />
+                                <animateTransform attributeName="transform" type="rotate" values="0 64 64;30 64 64;60 64 64;90 64 64;120 64 64;150 64 64;180 64 64;210 64 64;240 64 64;270 64 64;300 64 64;330 64 64"
+                                    calcMode="discrete" dur="1320ms" repeatCount="indefinite"></animateTransform>
+                            </g>
                         </svg>
                     </div>
                 </div>
@@ -177,36 +188,45 @@
                 <div class="page-header">
                     <h1 class="page-header__title">Новости</h1>
                 </div>
-                <div class="news-block">
-                    <div class="news-block__item">
-                        <a href="#" class="news-block__title">Поздравляем с победой Нашу Дашу</a>
-                        <div class="news-block__image" style="background-image: url('img/news-2.jpg')"></div>
-                        <span class="news-block__date">01.04.2017</span>
-                        <p class="news-block__text">В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход. В связи с этим нужно подчеркнуть, что...</p>
-                        <a href="#" class="news-block__link">Подробнее</a>
+                <div class="content-block">
+                    <div class="content-block__col-67">
+                        <a href="#" class="content-block__title content-block__title_link">Поздравляем с победой Нашу Дашу</a>
+                        <span class="content-block__date">01.04.2017</span>
+                        <p class="content-block__text">В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход. В связи
+                            с этим нужно подчеркнуть, что...</p>
+                        <a href="#" class="content-block__link content-block__link_right">Подробнее</a>
                     </div>
-                    <div class="news-block__item">
-                        <a href="#" class="news-block__title">Поздравляем с победой Нашу Дашу</a>
-                        <div class="news-block__image" style="background-image: url('img/news-1.jpg')"></div>
-                        <span class="news-block__date">01.04.2017</span>
-                        <p class="news-block__text">В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход...</p>
-                        <a href="#" class="news-block__link">Подробнее</a>
+                    <div class="content-block__col-33">
+                        <div class="content-block__bg-image" style="background-image: url(img/news-1.jpg)"></div>
                     </div>
-                    <div class="news-block__item">
-                        <a href="#" class="news-block__title">Поздравляем с победой Дарью Привалову!</a>
-                        <div class="news-block__image" style="background-image: url('img/news-2.jpg')"></div>
-                        <span class="news-block__date">02.05.2017</span>
-                        <p class="news-block__text">В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует...</p>
-                        <a href="#" class="news-block__link">Подробнее</a>
+                    <div class="content-block__col-33">
+                        <a href="#" class="content-block__title content-block__title_link content-block__title_small">Поздравляем с победой Нашу Дашу</a>
+                        <span class="content-block__date">01.04.2017</span>
+                        <div class="content-block__bg-image" style="background-image: url(img/news-2.jpg)"></div>
+                        <p class="content-block__text">В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход. В связи
+                            с этим нужно подчеркнуть, что...</p>
+                        <a href="#" class="content-block__link content-block__link_right">Подробнее</a>
                     </div>
-                    <div class="news-block__item">
-                        <a href="#" class="news-block__title">Поздравляем с победой Дарью Привалову!</a>
-                        <div class="news-block__image" style="background-image: url('img/news-3.jpg')"></div>
-                        <span class="news-block__date">03.06.2017</span>
-                        <p class="news-block__text">В связи с этим нужно подчеркнуть, что ламинарное движение...</p>
-                        <a href="#" class="news-block__link">Подробнее</a>
+                    <div class="content-block__col-33">
+                        <a href="#" class="content-block__title content-block__title_link content-block__title_small">Поздравляем с победой Нашу Дашу</a>
+                        <span class="content-block__date">01.04.2017</span>
+                        <div class="content-block__bg-image" style="background-image: url(img/news-2.jpg)"></div>
+                        <p class="content-block__text">В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход. В связи
+                            с этим нужно подчеркнуть, что...</p>
+                        <a href="#" class="content-block__link content-block__link_right">Подробнее</a>
+
+                    </div>
+                    <div class="content-block__col-33">
+                        <a href="#" class="content-block__title content-block__title_link content-block__title_small">Поздравляем с победой Нашу Дашу</a>
+                        <span class="content-block__date">01.04.2017</span>
+                        <div class="content-block__bg-image" style="background-image: url(img/news-2.jpg)"></div>
+                        <p class="content-block__text">В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход. В связи
+                            с этим нужно подчеркнуть, что...</p>
+                        <a href="#" class="content-block__link content-block__link_right">Подробнее</a>
+
                     </div>
                 </div>
+
             </section>
 
             <section class="section section_content">
@@ -234,102 +254,74 @@
         </main>
         <!-- /// CONTENT /// -->
 
-      </div><!--//WRAPPER-->
+    </div>
+    <!--//WRAPPER-->
 
-        <!-- +++ FOOTER +++ -->
-        <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__left">
-                    <span class="footer__sitemap-tag">Карта сайта:</span>
-                    <ul class="footer__sitemap">
-                        <li>
-                            <a class="is-active" href="#1">Главная</a>
-                        </li>
-                        <li>
-                            <a href="#3">Контакты</a>
-                        </li>
-                        <li>
-                            <a href="#4">Услуги</a>
-                        </li>
-                        <li>
-                            <a href="#5">О нас</a>
-                        </li>
-                        <li>
-                            <a href="#6">Новости</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__center">
-                    &#x24B8; КСК "Абрамцево", 2017
-                </div>
-                <div class="footer__right">
-                    Сделано в <a class="footer__andrius-link" href="">Andrius</a>
-                </div>
+    <!-- +++ FOOTER +++ -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__left">
+                <span class="footer__sitemap-tag">Карта сайта:</span>
+                <ul class="footer__sitemap">
+                    <li>
+                        <a class="is-active" href="#1">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#3">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="#4">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="#5">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#6">Новости</a>
+                    </li>
+                </ul>
             </div>
-        </footer>
+            <div class="footer__center">
+                &#x24B8; КСК "Абрамцево", 2017
+            </div>
+            <div class="footer__right">
+                Сделано в <a class="footer__andrius-link" href="">Andrius</a>
+            </div>
+        </div>
+    </footer>
 
-        <!-- /// FOOTER /// -->
+    <!-- /// FOOTER /// -->
 
 
-        <!--// INITS MAIN PAGE //-->
-        <script>
-            // Swiper
-        
-            var servicesSlider = new Swiper('.slider-services', {
-                nextButton: '.slider-services__arrow-right',
-                prevButton: '.slider-services__arrow-left',
-                slideClass: 'slider-services__slide',
-                autoplay: 4000,
-                loop: true,
-                spaceBetween: 30
-            });
+    <!--// INITS MAIN PAGE //-->
+    <script>
+        // Swiper
 
-            var teamSwiper = new Swiper('.slider-team', {
-                nextButton: '.slider-team__arrow-right',
-                prevButton: '.slider-team__arrow-left',
-                slideClass: 'slider-team__slide',
-                autoplay: false,
-                loop: true,
-                spaceBetween: 30
-            });
+        var servicesSlider = new Swiper('.slider-services', {
+            nextButton: '.slider-services__arrow-right',
+            prevButton: '.slider-services__arrow-left',
+            slideClass: 'slider-services__slide',
+            autoplay: 4000,
+            loop: true,
+            spaceBetween: 30
+        });
 
-            // Yandex map
-            ymaps.ready(init);
-            function init(){
-            var myMap;
-            var myPlacemark;
-            var adress;
-            
-                ymaps.geocode(adress).then(function (res) {
-                        adress = [56.243523, 37.936712];
-                        myMap = new ymaps.Map("map", {
-                        center: adress,
-                        zoom: 15,
-                        // controls: ['zoomControl']
-                        controls: []
-                    });
+        var teamSwiper = new Swiper('.slider-team', {
+            nextButton: '.slider-team__arrow-right',
+            prevButton: '.slider-team__arrow-left',
+            slideClass: 'slider-team__slide',
+            autoplay: false,
+            loop: true,
+            spaceBetween: 30
+        });
 
-                    myMap.behaviors.disable(['drag', 'scrollZoom',  'rightMouseButtonMagnifier']);
 
-                    myPlacemark = new ymaps.Placemark(adress, { 
-                        // hintContent: 'Можно написать хинт',
-                        balloonContent: 'КСК Абрамцево'
-                    });
 
-                    myMap.geoObjects.add(myPlacemark);
-                }
+        // bvideo.js
 
-                );
-                
-
-            }
-
-            // bvideo.js
-
-            (function () {
+        (function () {
 
             var bv = new Bideo();
-            
+
             bv.init({
                 // Video element
                 videoEl: document.querySelector('#background_video'),
@@ -367,6 +359,37 @@
 
         if (isIOS == true) {
             $('#background_video_preloader').hide();
+        }
+
+        // Yandex map
+        ymaps.ready(init);
+        function init() {
+            var myMap;
+            var myPlacemark;
+            var adress;
+
+            ymaps.geocode(adress).then(function (res) {
+                adress = [56.243523, 37.936712];
+                myMap = new ymaps.Map("map", {
+                    center: adress,
+                    zoom: 15,
+                    // controls: ['zoomControl']
+                    controls: []
+                });
+
+                myMap.behaviors.disable(['drag', 'scrollZoom', 'rightMouseButtonMagnifier']);
+
+                myPlacemark = new ymaps.Placemark(adress, {
+                    // hintContent: 'Можно написать хинт',
+                    balloonContent: 'КСК Абрамцево'
+                });
+
+                myMap.geoObjects.add(myPlacemark);
+            }
+
+            );
+
+
         }
     </script>
 

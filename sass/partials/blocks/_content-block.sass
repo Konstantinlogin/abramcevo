@@ -1,24 +1,25 @@
 .content-block
+    @extend %base-container
+    padding-left: 0
+    padding-right: 0
+
     display: flex
     display: -ms-flex
     display: -webkit-flex
     flex-wrap: wrap
-    width: calc(100% - 10px)
-    padding-right: 5px
-    padding-left: 5px
-    max-width: 980px
-    margin: auto
     box-sizing: border-box
-    &_checkmates
-        .content-block__bg-image
-            float: right
-        &:nth-child(even)
-            flex-direction: row-reverse
-            
-            .content-block__link
-                float: right
-            .content-block__bg-image
-                float: left
+    &__row
+        @extend .content-block
+        margin-bottom: 60px
+        width: 100%
+
+        &_inversed
+
+            &:nth-child(even)
+                flex-direction: row-reverse
+                // text-align: right
+
+                
 
 
     &_valign-middle
@@ -39,6 +40,13 @@
         &_center
             text-align: center
 
+    &__col-33
+        width: calc(33.3333333% - 20px)
+        margin-right: 20px
+        display: inline-block
+        &_center
+            text-align: center
+
     &__col-50
         width: calc(50% - 20px)
         margin-right: 20px
@@ -53,6 +61,13 @@
         &_center
             text-align: center
 
+    &__col-67
+        width: calc(66.3333333% - 20px)
+        margin-right: 20px
+        display: inline-block
+        &_center
+            text-align: center
+
     &__col-80
         width: calc(80% - 20px)
         margin-right: 20px
@@ -61,33 +76,42 @@
             text-align: center
 
     &__col-100
-        width: calc(100% - 20px)
-        padding-right: 20px
+        width: 100%
         display: inline-block
 
         &_center
             text-align: center
 
     &__title
+        display: block
+        margin-top: 1.5rem
+        margin-bottom: 1.5rem
         font-weight: 300
-        padding-top: 1rem
-        font-size: 1.8rem
+        font-size: 1.4rem
+        
         &_small
-          font-size: 1.4rem  
+          font-size: 1.1rem  
+        &_link
+            color: inherit
+            text-decoration: none
+            &:hover
+                opacity: 0.8
+    &__date
+        color: grey
 
     &__image
         width: calc(100% - 20px)
+        margin-bottom: 20px
         &_left
             float: left
             max-width: 480px
 
-            margin-right: 20px
+            margin-right: 10px
 
         &_right
             float: right
             max-width: 480px
-
-            margin-left: 20px
+            margin-left: 10px
 
 
     &__text
@@ -105,17 +129,30 @@
         &_center
             text-align: center
             display: inline-block
+    &__read-more
+        @extend %base-link
+        display: inline-block
+        &_right
+            float: right
+            margin-right: 10px
+        &_center
+            text-align: center
+            display: inline-block
+
 
     &__bg-image
-        width: calc(100% - 20px)
+        width: 100%
         margin: 20px auto
         display: block
-        height: 290px
+        height: 220px
         background-size: cover
-
         background-repeat: no-repeat
 
-    &__price
+        &_full-height
+            height: 100%
+            min-height: 220px
+
+    &__icon-price
         display: inline-block
         margin-bottom: 20px
         &:before
@@ -123,10 +160,11 @@
             display: inline-block
             margin-right: 10px
             font-family: icomoon !important
+            font-style: normal
             font-size: 2rem
             position: relative
             top: .25rem
-    &__abonements
+    &__icon-ticket
         display: inline-block
         font-weight: 500
         &:before
@@ -134,28 +172,12 @@
             display: inline-block
             margin-right: 10px
             font-family: icomoon !important
+            font-style: normal
             font-size: 2rem
             position: relative
             top: .25rem
-    &__abonement
-        display: inline-block
-        width: calc(100% - 3rem)
-        
-        margin-left: calc(2rem + 10px)
-        margin-top: 2.5px
-        margin-bottom: 2.5px
-        
-    &__separator
-        display: block
-        width: 90px
-        height: 1px
-        border-top: 1px solid #ccc
-        margin-left: calc(2rem + 10px)
-        margin-right: calc(2rem + 10px)
-        margin-top: 20px
-        margin-bottom: 10px
 
-
+        
 
 
 
@@ -163,11 +185,20 @@
     .content-block
         display: block
 
-        &__col-20, &__col-25, &__col-50, &__col-60, &__col-80, &__col-100
-            width: calc(100% - 20px)
-            padding-right: 10px
-            padding-left:  10px
+
+
+
+        &__col-20, &__col-25,  &__col-33, &__col-50, &__col-60, &__col-67, &__col-80, &__col-100
+            width: 100%
             margin: 0
+
+        &__row
+            margin-bottom: 0
+            &_inversed
+
+                // &:nth-child(even)
+
+                //     text-align: left
  
                 
 
@@ -193,6 +224,13 @@
 
             &_center
 
+        &__icon-price, &__icon-ticket
+            &:before
+                font-size: 1.5rem
+
+
+
+
 +media($screen-ex-small)
     .content-block
         display: block
@@ -213,8 +251,12 @@
     h3, h4, h5, h6
        font-size: 1rem
 
-    p
+    p, span, b, strong
         @extend %base-text
+
+    
+
+    
 
     img
         max-width: 480px
@@ -224,6 +266,22 @@
 
     img[style*="float:right"], img[style*="float: right"], img[style*=" float: right"], img[style*=" float : right"], img[style*=" float :right"]
         margin-left: 20px
+
+    ol
+        color: #333
+    ul
+        list-style: none
+        margin-left: -35px
+        color: #333
+
+        li
+            padding-bottom: .3rem
+
+    span
+        display: inline-block
+    
+
+
     
 
 +media($screen-small)
