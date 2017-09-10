@@ -8,18 +8,24 @@
     display: -webkit-flex
     flex-wrap: wrap
     box-sizing: border-box
+
     &__row
         @extend .grid
         margin-bottom: 40px
-        width: 100%
         &:last-of-type
             margin-bottom: 0
 
         &_inversed
 
             &:nth-child(even)
+
+            
+
+            &:nth-child(even)
                 flex-direction: row-reverse
                 // text-align: right
+
+
 
     &_valign-middle
         align-content: center
@@ -57,11 +63,12 @@
 
     &__col-50
         width: calc(50% - 20px)
-        margin-right: 20px
+        margin-right: 10px
+        margin-left: 10px
         display: inline-block
-        &:last-of-type
-            margin-right: 0
-            width: 50%
+        // &:last-of-type
+        //     margin-right: 0
+        //     width: 50%
         &_center
             text-align: center
 
