@@ -1,0 +1,134 @@
+.grid
+
+    padding-left: 0
+    padding-right: 0
+
+    display: flex
+    display: -ms-flex
+    display: -webkit-flex
+    flex-wrap: wrap
+    box-sizing: border-box
+    &__row
+        @extend .grid
+        margin-bottom: 40px
+        width: 100%
+        &:last-of-type
+            margin-bottom: 0
+
+        &_inversed
+
+            &:nth-child(even)
+                flex-direction: row-reverse
+                // text-align: right
+
+    &_valign-middle
+        align-content: center
+        align-items: center
+    &__col-20
+        width: calc(20% - 20px)
+        margin-right: 20px
+        display: inline-block
+        &:last-of-type
+            margin-right: 0
+            width: 20%
+
+        &_center
+            text-align: center
+
+    &__col-25
+        width: calc(25% - 20px)
+        margin-right: 20px
+        display: inline-block
+        &:last-of-type
+            margin-right: 0
+            width: 25%
+        &_center
+            text-align: center
+
+    &__col-33
+        width: calc(33.3333333% - 20px)
+        margin-right: 20px
+        display: inline-block
+        &:last-of-type
+            margin-right: 0
+            width: 33.3333333%
+        &_center
+            text-align: center
+
+    &__col-50
+        width: calc(50% - 20px)
+        margin-right: 20px
+        display: inline-block
+        &:last-of-type
+            margin-right: 0
+            width: 50%
+        &_center
+            text-align: center
+
+    &__col-60
+        width: calc(60% - 20px)
+        margin-right: 20px
+        display: inline-block
+        &:last-of-type
+            margin-right: 0
+            width: 60%
+        &_center
+            text-align: center
+
+    &__col-67
+        width: calc(66.3333333% - 20px)
+        margin-right: 20px
+        display: inline-block
+        &:last-of-type
+            margin-right: 0
+            width: 66.3333333%
+        &_center
+            text-align: center
+
+    &__col-80
+        width: calc(80% - 20px)
+        margin-right: 20px
+        display: inline-block
+        &_center
+            text-align: center
+
+    &__col-100
+        width: 100%
+        display: inline-block
+
+        &_center
+            text-align: center
+
+  
+
++media($screen-small)
+
+    .grid
+        display: block
+
+
+        &__col-20, &__col-25,  &__col-33, &__col-50, &__col-60, &__col-67, &__col-80, &__col-100
+            width: 100%
+            margin: 0
+            &:last-of-type
+                width: 100%
+                margin: 0
+
+
+        &__row
+            margin-bottom: 0
+            display: block
+            width: 100%
+            &_inversed
+
+                // &:nth-child(even)
+
+                //     text-align: left
+ 
+                
+
+    
+
+
+
+        
