@@ -1,5 +1,61 @@
 .content
-  color: #333
+    color: #333
+    img
+        width: 100%
+        max-width: 460px
+
+    img[style*="float:left"], img[style*="float: left"], img[style*=" float: left"], img[style*=" float : left"], img[style*=" float :left"]
+        margin-right: 20px
+
+    img[style*="float:right"], img[style*="float: right"], img[style*=" float: right"], img[style*=" float : right"], img[style*=" float :right"]
+        margin-left: 20px
+
+    ol
+        
+    ul
+        list-style: none
+        margin-left: -35px
+        
+
+        li
+            padding-bottom: .3rem
+
+    span
+        display: inline-block
+
+    a
+        color: inherit
+        &:hover
+            text-decoration: none
+
+    h1, h2, h3, h4, h5, h6
+        font-weight: 300
+        margin-top: 0.83em
+        margin-bottom: 0.83em
+    h1
+        font-size: 1.8rem
+    h2
+        font-size: 1.4rem
+    h3, h4, h5, h6
+        font-size: 1rem
+
+    p, span, b, strong
+        @extend %base-text
+
+.title
+    display: block
+    font-weight: 300
+    font-size: 1.4rem
+    margin-top: 0.83em
+    margin-bottom: 0.83em
+
+    &_link
+        text-decoration: none
+        color: inherit
+
+    &_small
+        font-size: 1rem
+
 
 .bg-image
     width: 100%
@@ -24,75 +80,20 @@
         display: inline-block
 
 
-img
-    width: 100%
-    max-width: 460px
-
-img[style*="float:left"], img[style*="float: left"], img[style*=" float: left"], img[style*=" float : left"], img[style*=" float :left"]
-    margin-right: 20px
-
-img[style*="float:right"], img[style*="float: right"], img[style*=" float: right"], img[style*=" float : right"], img[style*=" float :right"]
-    margin-left: 20px
-
-ol
-    
-ul
-    list-style: none
-    margin-left: -35px
-    
-
-    li
-        padding-bottom: .3rem
-
-span
-    display: inline-block
-
-a
-    color: inherit
-    &:hover
-        text-decoration: none
-    
-
-.title
-    display: block
-    font-weight: 300
-    font-size: 1.4rem
-    margin-top: 0.83em
-    margin-bottom: 0.83em
-
-    &_link
-        text-decoration: none
-        color: inherit
-
-    &_small
-        font-size: 1rem
-
-        
-
-h1, h2, h3, h4, h5, h6
-    font-weight: 300
-    margin-top: 0.83em
-    margin-bottom: 0.83em
-h1
-    font-size: 1.8rem
-h2
-    font-size: 1.4rem
-h3, h4, h5, h6
-    font-size: 1rem
-
-p, span, b, strong
-    @extend %base-text
-
 
 +media($screen-small)
-    .bg-image
-        400px
 
-    img, .bg-image
-        display: block
-        margin-bottom: 20px
-        width: calc(100% + 20px)
-        max-width: calc(100% + 20px)
-        margin-left: -10px
+    .content
+
+        .bg-image
+            height: 400px
+
+
+        img, .bg-image
+            display: block
+            margin-bottom: 20px
+            width: calc(100% + 20px)
+            max-width: calc(100% + 20px)
+            margin-left: -10px
 
         
