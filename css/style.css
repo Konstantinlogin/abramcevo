@@ -1675,9 +1675,15 @@ h3, h4, h5, h6 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: calc(100% - 20px);
+  margin: auto; }
   .grid__row {
-    margin-bottom: 40px; }
+    margin-bottom: 20px; }
     .grid__row:last-of-type {
       margin-bottom: 0; }
     .grid__row_inversed:nth-child(even) {
@@ -1696,7 +1702,6 @@ h3, h4, h5, h6 {
     align-items: center; }
   .grid__col-20 {
     width: calc(20% - 20px);
-    margin-right: 20px;
     display: inline-block; }
     .grid__col-20:last-of-type {
       margin-right: 0;
@@ -1705,7 +1710,6 @@ h3, h4, h5, h6 {
       text-align: center; }
   .grid__col-25 {
     width: calc(25% - 20px);
-    margin-right: 20px;
     display: inline-block; }
     .grid__col-25:last-of-type {
       margin-right: 0;
@@ -1714,7 +1718,6 @@ h3, h4, h5, h6 {
       text-align: center; }
   .grid__col-33 {
     width: calc(33.3333333% - 20px);
-    margin-right: 20px;
     display: inline-block; }
     .grid__col-33:last-of-type {
       margin-right: 0;
@@ -1723,14 +1726,11 @@ h3, h4, h5, h6 {
       text-align: center; }
   .grid__col-50 {
     width: calc(50% - 20px);
-    margin-right: 10px;
-    margin-left: 10px;
     display: inline-block; }
     .grid__col-50_center {
       text-align: center; }
   .grid__col-60 {
     width: calc(60% - 20px);
-    margin-right: 20px;
     display: inline-block; }
     .grid__col-60:last-of-type {
       margin-right: 0;
@@ -1739,7 +1739,6 @@ h3, h4, h5, h6 {
       text-align: center; }
   .grid__col-67 {
     width: calc(66.3333333% - 20px);
-    margin-right: 20px;
     display: inline-block; }
     .grid__col-67:last-of-type {
       margin-right: 0;
@@ -1748,7 +1747,6 @@ h3, h4, h5, h6 {
       text-align: center; }
   .grid__col-80 {
     width: calc(80% - 20px);
-    margin-right: 20px;
     display: inline-block; }
     .grid__col-80_center {
       text-align: center; }
@@ -1757,6 +1755,10 @@ h3, h4, h5, h6 {
     display: inline-block; }
     .grid__col-100_center {
       text-align: center; }
+
+@media screen and (max-width: 1024px) {
+  .grid, .grid__row, .grid__row {
+    width: 100%; } }
 
 @media screen and (max-width: 768px) {
   .grid, .grid__row {
