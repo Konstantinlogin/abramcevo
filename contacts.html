@@ -110,7 +110,7 @@
                             VK.Widgets.Group("vk_groups", {mode: 3, no_cover: 1, width: "300", color2: '333', color3: '333'}, 70461749);
                         </script>
                     </div>
-                    <div class="content-block__col-50 content-block__col-50_mar" id="map"> </div>
+                    <div class="content-block__col-50 content-block__col-50_mar" id="yandexMapContacts"> </div>
                     <div class="content-block__col-100">
                         <h2>Как добраться</h2>
                         <p><b>Пешком:</b> Планета начинает ритм. Руда, так как не наследует древние поднятия, дает ямб. Сейчас хорошо известно, что силлабо-тоника притягивает гирокомпас. Образ, в первом приближении, многопланово притягивает Южный Треугольник, что в общем свидетельствует о преобладании тектонических опусканий в это время. </p>
@@ -158,35 +158,7 @@
         </footer>
 
         <script>
-                ymaps.ready(init);
-                function init(){
-                var myMap;
-                var myPlacemark;
-                var adress;
-            
-                ymaps.geocode(adress).then(function (res) {
-                        adress = [56.243523, 37.936712];
-                        myMap = new ymaps.Map("map", {
-                        center: adress,
-                        zoom: 15,
-                        controls: ['zoomControl']
-                        // controls: []
-                    });
-
-                    // myMap.behaviors.disable(['drag', 'scrollZoom',  'rightMouseButtonMagnifier']);
-
-                    myPlacemark = new ymaps.Placemark(adress, { 
-                        // hintContent: 'Можно написать хинт',
-                        balloonContent: 'КСК Абрамцево'
-                    });
-
-                    myMap.geoObjects.add(myPlacemark);
-                }
-
-                );
-                
-
-            }
+  
         </script>
 
         <!-- /// FOOTER /// -->

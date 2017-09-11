@@ -9,7 +9,7 @@
     flex-wrap: wrap
     box-sizing: border-box
     justify-content: space-between
-    width: calc(100% - 20px)
+    // width: calc(100% - 10px)
     margin: auto
 
     &__row
@@ -65,12 +65,7 @@
 
     &__col-50
         width: calc(50% - 20px)
-        // margin-right: 10px
-        // margin-left: 10px
         display: inline-block
-        // &:last-of-type
-        //     margin-right: 0
-        //     width: 50%
         &_center
             text-align: center
 
@@ -109,8 +104,8 @@
             text-align: center
 
 +media(1024px)
-    .grid, .grid__row
-        width: 100%
+    // .grid, .grid__row
+    //     width: 100%
 
 +media($screen-small)
 
@@ -130,11 +125,7 @@
             margin-bottom: 0
             display: block
             width: 100%
-            &_inversed
 
-                // &:nth-child(even)
-
-                //     text-align: left
  
                 
 
