@@ -1244,7 +1244,7 @@ small {
 
 .yandex-map-block {
   position: relative;
-  min-height: 400px; }
+  height: 400px; }
   .yandex-map-block--bottom-reset {
     margin-bottom: -30px; }
   .yandex-map-block__map {
@@ -1299,7 +1299,7 @@ small {
     padding-right: 10px;
     background: rgba(0, 0, 0, 0.8);
     width: calc(50% - 50px);
-    height: 400px;
+    height: 100%;
     -webkit-transition: 0.13s;
     -o-transition: 0.13s;
     transition: 0.13s; }
@@ -1313,8 +1313,9 @@ small {
     position: absolute;
     right: 0;
     top: 20px;
-    width: 100%;
-    max-width: 465px; }
+    width: calc(100% - 10px);
+    max-width: 465px;
+    padding-right: 10px; }
   .yandex-map-block__title {
     font-size: 1.5em;
     display: block;
@@ -1336,17 +1337,18 @@ small {
 
 @media screen and (max-width: 767px) {
   .yandex-map-block {
-    height: 550px; }
+    height: 500px;
+    padding-bottom: 40px; }
     .yandex-map-block .address {
       text-align: left; }
     .yandex-map-block__content {
-      height: 550px;
+      min-height: 0;
       width: calc(100% - 20px);
       text-align: left; }
+    .yandex-map-block__map {
+      height: 500px; }
     .yandex-map-block__content-inner {
       max-width: 100%; }
-    .yandex-map-block__map {
-      height: 550px; }
     .yandex-map-block__controls {
       background-color: white;
       width: 100%;
