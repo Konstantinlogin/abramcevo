@@ -83,13 +83,24 @@ $(document).ready(function () {
         services: '.slider-services',
     };
 
+    if ($(slider.services).length > 0) {
+        var servicesSlider = new Swiper(slider.services, {
+            nextButton: '.slider-services__arrow-right',
+            prevButton: '.slider-services__arrow-left',
+            slideClass: 'slider-services__slide',
+            wrapperClass: 'slider-services__wrapper',
+            autoplay: 2000,
+            loop: true,
+        });
+
+    }
+
     var yandexMap = "#yandexMap";
 
     var video = '#bgVideo';
     // bvideo.js
 
     if ($(video).length > 0) {
-        console.log(1)
 
         var bv = new Bideo();
 
@@ -135,17 +146,7 @@ $(document).ready(function () {
     }
 
 
-    if ($(slider.services).length > 0) {
-        var servicesSlider = new Swiper(slider.services, {
-            nextButton: '.slider-services__arrow-right',
-            prevButton: '.slider-services__arrow-left',
-            slideClass: 'slider-services__slide',
-            autoplay: 4000,
-            loop: true,
-            spaceBetween: 30
-        });
 
-    }
 
     if ($(yandexMap).length > 0) {
         // Yandex map
@@ -154,17 +155,42 @@ $(document).ready(function () {
             var myMap;
             var myPlacemark;
             var adress;
+            var myControls = [];
+
+        $('#yandexMapControls').on('click', function(){
+                $(this).toggleClass('is-active')
+                
+                if ($(this).hasClass('is-active')) {
+
+                    myMap.behaviors.enable(['drag', 'scrollZoom', 'rightMouseButtonMagnifier']);
+
+                    myMap.controls.add('zoomControl', {
+                        size: "large"
+                    });
+
+                    $('#yandexMapContent').addClass('is-hidden');
+
+                }
+                else {
+                    myMap.behaviors.disable(['drag', 'scrollZoom', 'rightMouseButtonMagnifier']);
+                    myMap.controls.remove('zoomControl', {
+                        size: "large"
+                    });
+                    $('#yandexMapContent').removeClass('is-hidden');
+                }
+            });
 
             ymaps.geocode(adress).then(function (res) {
+
                 adress = [56.243523, 37.936712];
                 myMap = new ymaps.Map("yandexMap", {
                     center: adress,
                     zoom: 15,
-                    // controls: ['zoomControl']
-                    controls: []
+                    controls: myControls
                 });
 
-                myMap.behaviors.disable(['drag', 'scrollZoom', 'rightMouseButtonMagnifier']);
+               
+               myMap.behaviors.disable(['drag', 'scrollZoom', 'rightMouseButtonMagnifier']); 
 
                 myPlacemark = new ymaps.Placemark(adress, {
                     // hintContent: 'Можно написать хинт',
@@ -179,7 +205,6 @@ $(document).ready(function () {
 
         }
     }
-
 
 });
 

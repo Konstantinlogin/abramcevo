@@ -88,8 +88,19 @@ p, span, b, strong
     display: inline-block
     width: 100%
     text-align: right
+    &_left
+        text-align: left
     &__link
         display: inline-block
+        &:after
+            content: $icon-right-chevron
+            position: relative
+            display: inline-block
+            font-family: icomoon !important
+            text-decoration: none !important
+            font-size: 0.6rem
+            right: -0.3rem
+
 
 
 

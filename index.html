@@ -124,7 +124,7 @@
                 </div>
             </div>
             <div class="slider-services">
-                <div class="slider-services__wrapper swiper-wrapper">
+                <div class="slider-services__wrapper">
                     <div class="slider-services__slide">
                         <h1 class="slider-services__heading">
                             Ипотерапия
@@ -262,7 +262,7 @@
                     </div>
                 </div>
                 <div class="yandex-map-block yandex-map-block--bottom-reset">
-                    <div class="yandex-map-block__content">
+                    <div id="yandexMapContent" class="yandex-map-block__content ">
                         <div class="yandex-map-block__content-inner">
                             <h2 class="yandex-map-block__title">Конно-спортивный клуб "Абрамцево"</h2>
                             <span class="phone">
@@ -272,10 +272,14 @@
                             <address class="address pt-50">Наш адрес:<br/>
                                 <i class="address__icon"></i>Сергиево-посадский район, дер. Жучки
                             </address>
-                            <a class="yandex-map-block__link" href="contacts.html#how_to_get_us">Как добраться > </a>
+                            <br/> <br/>
+                            <div class="read-more read-more_left">
+                                <a href="#" class="read-more__link">Как добраться</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="yandex-map-block__map" id="yandexMap"> </div>
+                    <div class="yandex-map-block__map" id="yandexMap"></div>
+                    <div class="yandex-map-block__controls" id="yandexMapControls"><span class="icon-move yandex-map-block__controls-icon"></span></div>   
                 </div>
             </section>
 

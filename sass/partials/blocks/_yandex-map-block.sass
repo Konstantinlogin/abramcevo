@@ -8,6 +8,31 @@
         width: 100%
         height: 400px
         z-index: 1
+    &__controls
+        color: #333
+        position: absolute
+        right: 0
+        z-index: 2
+        cursor: pointer
+        padding: 0
+        padding: 0
+        text-align: center
+        height: 40px
+        width: 40px
+
+        &.is-active
+            opacity: 0.5
+    &__controls-icon
+        text-align: center
+        position: relative
+
+        
+        &:before
+            position: relative
+            top: 4.5px
+            font-size: 2rem
+        
+
     &__content
         position: absolute
         left: 0
@@ -27,6 +52,11 @@
         background: rgba(0, 0, 0, 0.8)
         width: calc(50% - 50px)
         height: 400px
+        transition: 0.13s
+        &.is-hidden
+            opacity: 0
+            transition: 0.13s
+            z-index: -1
 
     &__content-inner
         position: absolute
@@ -41,8 +71,8 @@
         font-size: 1.5em
         display:  block
         width: 100%
-        border-bottom:  1px solid #ccc
-        border-top:  1px solid #ccc
+        // border-bottom:  1px solid #ccc
+        // border-top:  1px solid #ccc
         padding-top: 1rem
         padding-bottom: 1rem
         margin-bottom: 1rem
@@ -62,19 +92,24 @@
             padding-right: 10px
             padding-left: 10px
 
-
 +media($screen-small)
     .yandex-map-block
         height: 550px
+        // padding-bottom: 40px
         .address
             text-align: left
         &__content
             height: 550px
-            width: calc(100% - 30px)
+            width: calc(100% - 20px)
             text-align: left
         &__content-inner
             max-width: 100%
         &__map
             height: 550px
+        &__controls
+            background-color: white
+            width: 100%
+            bottom: 0
+
 
 
