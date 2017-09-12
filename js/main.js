@@ -83,10 +83,7 @@ $(document).ready(function () {
         services: '.slider-services',
     };
 
-    var yandexMap = {
-        main: '#yandexMapMainPage',
-        contacts: '#yandexMapContacts'
-    }
+    var yandexMap = "#yandexMap";
 
     var video = '#bgVideo';
     // bvideo.js
@@ -150,7 +147,7 @@ $(document).ready(function () {
 
     }
 
-    if ($(yandexMap.main).length > 0) {
+    if ($(yandexMap).length > 0) {
         // Yandex map
         ymaps.ready(init);
         function init() {
@@ -160,7 +157,7 @@ $(document).ready(function () {
 
             ymaps.geocode(adress).then(function (res) {
                 adress = [56.243523, 37.936712];
-                myMap = new ymaps.Map("yandexMapMainPage", {
+                myMap = new ymaps.Map("yandexMap", {
                     center: adress,
                     zoom: 15,
                     // controls: ['zoomControl']
@@ -183,38 +180,6 @@ $(document).ready(function () {
         }
     }
 
-
-    if ($(yandexMap.contacts.length > 0)) {
-        ymaps.ready(initContacts);
-        function initContacts() {
-            var mapContacts;
-            var placemarkContacts;
-            var adressContacts;
-
-            ymaps.geocode(adressContacts).then(function (res) {
-                adressContacts = [56.243523, 37.936712];
-                mapContacts = new ymaps.Map("yandexMapContacts", {
-                    center: adressContacts,
-                    zoom: 15,
-                    controls: ['zoomControl']
-                    // controls: []
-                });
-
-                // myMap.behaviors.disable(['drag', 'scrollZoom',  'rightMouseButtonMagnifier']);
-
-                placemarkContacts = new ymaps.Placemark(adress, {
-                    // hintContent: 'Можно написать хинт',
-                    balloonContent: 'КСК Абрамцево'
-                });
-
-                mapContact.geoObjects.add(placemarkContacts);
-            }
-
-            );
-
-
-        }
-    }
 
 });
 

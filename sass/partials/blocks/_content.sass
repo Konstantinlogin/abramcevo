@@ -2,7 +2,7 @@
     color: #333
 img
     width: 100%
-    max-width: 460px
+    max-width: 600px
 
 img[style*="float:left"], img[style*="float: left"], img[style*=" float: left"], img[style*=" float : left"], img[style*=" float :left"]
     margin-right: 20px
@@ -27,6 +27,7 @@ a
     color: inherit
     &:hover
         text-decoration: none
+    
 
 h1, h2, h3, h4, h5, h6
     font-weight: 300
@@ -50,11 +51,19 @@ p, span, b, strong
     margin-bottom: 0.83em
 
     &_link
+
         text-decoration: none
         color: inherit
+        // display: inline-block
+        // background-size: 1px 1em
+        // box-shadow: inset 0 -0.175em white, inset 0 -0.2em black
+        &:hover
+            color: gray
+
+
 
     &_small
-        font-size: 1rem
+        font-size: 1.2rem
 
 
 .bg-image
@@ -64,11 +73,14 @@ p, span, b, strong
     height: 220px
     background-size: cover
     background-repeat: no-repeat
+    background-position: center
 
     &_full-height
         height: 100%
         min-height: 220px
 .date
+    display: block
+    margin-top: 20px 
     color: gray
     font-size: 90%
 

@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('#{$icomoon-font-path}/icomoon.eot?y16qu0');
-  src:  url('#{$icomoon-font-path}/icomoon.eot?y16qu0#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/icomoon.ttf?y16qu0') format('truetype'),
-    url('#{$icomoon-font-path}/icomoon.woff?y16qu0') format('woff'),
-    url('#{$icomoon-font-path}/icomoon.svg?y16qu0#icomoon') format('svg');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?xvyu5o');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?xvyu5o#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?xvyu5o') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?xvyu5o') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?xvyu5o#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,6 +26,106 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ticket {
+  &:before {
+    content: $icon-ticket;
+  }
+}
+.icon-down-chevron {
+  &:before {
+    content: $icon-down-chevron;
+  }
+}
+.icon-left-chevron {
+  &:before {
+    content: $icon-left-chevron;
+  }
+}
+.icon-location-pin {
+  &:before {
+    content: $icon-location-pin;
+  }
+}
+.icon-medal {
+  &:before {
+    content: $icon-medal;
+  }
+}
+.icon-right-chevron {
+  &:before {
+    content: $icon-right-chevron;
+  }
+}
+.icon-ruble {
+  &:before {
+    content: $icon-ruble;
+  }
+}
+.icon-trophy {
+  &:before {
+    content: $icon-trophy;
+  }
+}
+.icon-up-chevron {
+  &:before {
+    content: $icon-up-chevron;
+  }
+}
+.icon-move {
+  &:before {
+    content: $icon-move;
+  }
+}
+.icon-search-minus {
+  &:before {
+    content: $icon-search-minus;
+  }
+}
+.icon-search-plus {
+  &:before {
+    content: $icon-search-plus;
+  }
+}
+.icon-search2 {
+  &:before {
+    content: $icon-search2;
+  }
+}
+.icon-profile-male {
+  &:before {
+    content: $icon-profile-male;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter;
+  }
+}
+.icon-googleplus {
+  &:before {
+    content: $icon-googleplus;
+  }
+}
+.icon-rss {
+  &:before {
+    content: $icon-rss;
+  }
+}
+.icon-tumblr {
+  &:before {
+    content: $icon-tumblr;
+  }
+}
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin;
+  }
+}
 .icon-alert-circle {
   &:before {
     content: $icon-alert-circle;
@@ -96,66 +196,6 @@
     content: $icon-phone-call;
   }
 }
-.icon-down-chevron {
-  &:before {
-    content: $icon-down-chevron;
-  }
-}
-.icon-left-chevron {
-  &:before {
-    content: $icon-left-chevron;
-  }
-}
-.icon-location-pin {
-  &:before {
-    content: $icon-location-pin;
-  }
-}
-.icon-medal {
-  &:before {
-    content: $icon-medal;
-  }
-}
-.icon-right-chevron {
-  &:before {
-    content: $icon-right-chevron;
-  }
-}
-.icon-ruble {
-  &:before {
-    content: $icon-ruble;
-  }
-}
-.icon-trophy {
-  &:before {
-    content: $icon-trophy;
-  }
-}
-.icon-up-chevron {
-  &:before {
-    content: $icon-up-chevron;
-  }
-}
-.icon-search-minus {
-  &:before {
-    content: $icon-search-minus;
-  }
-}
-.icon-search-plus {
-  &:before {
-    content: $icon-search-plus;
-  }
-}
-.icon-search2 {
-  &:before {
-    content: $icon-search2;
-  }
-}
-.icon-profile-male {
-  &:before {
-    content: $icon-profile-male;
-  }
-}
 .icon-vk-with-circle {
   &:before {
     content: $icon-vk-with-circle;
@@ -191,14 +231,24 @@
     content: $icon-clock;
   }
 }
-.icon-ticket {
+.icon-refresh2 {
   &:before {
-    content: $icon-ticket;
+    content: $icon-refresh2;
   }
 }
-.icon-ticket2 {
+.icon-youtube22 {
   &:before {
-    content: $icon-ticket2;
+    content: $icon-youtube22;
+  }
+}
+.icon-skype2 {
+  &:before {
+    content: $icon-skype2;
+  }
+}
+.icon-clock2 {
+  &:before {
+    content: $icon-clock2;
   }
 }
 
