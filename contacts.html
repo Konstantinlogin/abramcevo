@@ -22,7 +22,7 @@
                 <form class="search">
                     <i class="search__icon"></i>
                     <input type="text" placeholder="Поиск по сайту" class="search__input" />
-                    <input type="submit" class="search__submit" value='найти'/>
+                    <input type="submit" class="search__submit" value='найти' />
                 </form>
                 <span class="phone"><i class="phone__icon"></i>+7 985 1345795</span>
                 <span class="work-time"><i class="work-time__icon"></i>пн-пт с 9:00 до 20:00</span>
@@ -85,83 +85,111 @@
                 <a class="breadcrumbs__link is-active" href="#">Контакты</a>
             </li>
         </div>
-         <!-- /// BREADCRUMBS /// -->
+        <!-- /// BREADCRUMBS /// -->
 
         <!-- +++ CONTENT +++ -->
 
         <main class="content">
 
 
-            <section id="about" class="section section_content">
-                <div class="page-header">
-                    <h1 class="page-header__title">Контакты</h1>
-                </div>
-                <div class="content-block">
-                    <div class="content-block__col-50">
-                        <h2>Конно-спортивный клуб абрамцево</h2>
-                        <b class="content-block__text">Наши телефоны:</b><br><span class="content-block__text"> +7 (915)276-76-88, +7(985)134-57-95</span><br><br>
-                        <b class="content-block__text">Время работы:</b><br><span class="content-block__text"> пн-пт с 9:00 до 20:00</span><br><br>
-                        <b class="content-block__text">Адрес:</b><br><span class="content-block__text">Сергиево-посадский район, дер. Жучки</span><br><br>
-                        <b class="content-block__text">Мы вконтакте</b><br>
-                        <script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
-                        <!-- VK Widget -->
-                        <div id="vk_groups"></div>
-                        <script type="text/javascript">
-                            VK.Widgets.Group("vk_groups", {mode: 3, no_cover: 1, width: "300", color2: '333', color3: '333'}, 70461749);
-                        </script>
+            <section class="section section_content">
+                <div class="lo-container">
+                    <div class="page-header">
+                        <h1 class="page-header__title">Контакты</h1>
                     </div>
-                    <div class="content-block__col-50 content-block__col-50_mar" id="yandexMapContacts"> </div>
-                    <div class="content-block__col-100">
-                        <h2>Как добраться</h2>
-                        <p><b>Пешком:</b> Планета начинает ритм. Руда, так как не наследует древние поднятия, дает ямб. Сейчас хорошо известно, что силлабо-тоника притягивает гирокомпас. Образ, в первом приближении, многопланово притягивает Южный Треугольник, что в общем свидетельствует о преобладании тектонических опусканий в это время. </p>
-                        <p><b>На автомобиле:</b> Планета начинает ритм. Руда, так как не наследует древние поднятия, дает ямб. Сейчас хорошо известно, что силлабо-тоника притягивает гирокомпас. Образ, в первом приближении, многопланово притягивает Южный Треугольник, что в общем свидетельствует о преобладании тектонических опусканий в это время. </p>
+
+                    <div class="grid">
+                        <div class="grid__row">
+                            <div class="grid__col-50">
+                                    <h2>Конно-спортивный клуб абрамцево</h2>
+                                <b>Наши телефоны:</b>&nbsp;&nbsp;&nbsp;<span>+7 (915)276-76-88, +7(985)134-57-95</span>
+                                <br><br>
+                                <b>Время работы:</b>&nbsp;&nbsp;&nbsp;<span> пн-пт с 9:00 до 20:00</span>
+                                <br><br>
+                                <b>Адрес:</b>&nbsp;&nbsp;&nbsp;<span>Сергиево-посадский район, дер. Жучки</span>
+
+          
+                            </div>
+                            <div class="grid__col-50">
+                                <script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
+                                <!-- VK Widget -->
+                                <div style="width: 100%; margin-top: 20px; margin-bottom: 20px;" id="vk_groups"></div>
+                                <script type="text/javascript">
+                                    VK.Widgets.Group("vk_groups", {
+                                        mode: 3,
+                                        no_cover: 1,
+                                        width: "auto",      
+                                        color2: '333',
+                                        color3: '333'
+                                    }, 70461749);
+                                </script>
+                            </div>
+                        </div>
+                        <div class="grid__row">
+                            <div class="grid__col-50">
+                                <div class="yandex-map-block yandex-map-block--bottom-reset">
+                                    <div class="yandex-map-block__map" id="yandexMap"></div>
+                                    <div class="yandex-map-block__controls" id="yandexMapControls"><span class="icon-move yandex-map-block__controls-icon"></span></div>
+                                </div>
+                            </div>
+                            <div class="grid__col-50">
+                                <h2>Как добраться</h2>
+                                <p>
+                                <b>Пешком:</b> Планета начинает ритм. Руда, так как не наследует древние поднятия, дает ямб.
+                                    Сейчас хорошо известно, что силлабо-тоника притягивает гирокомпас. Образ, в первом приближении,
+                                    многопланово притягивает Южный Треугольник, что в общем свидетельствует о преобладании
+                                    тектонических опусканий в это время. </p>
+                                <p><b>На автомобиле:</b> Планета начинает ритм. Руда, так как не наследует древние поднятия,
+                                    дает ямб. Сейчас хорошо известно, что силлабо-тоника притягивает гирокомпас. Образ, в
+                                    первом приближении, многопланово притягивает Южный Треугольник, что в общем свидетельствует
+                                    о преобладании тектонических опусканий в это время. </p>
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
             </section>
-
         </main>
         <!-- /// CONTENT /// -->
 
-      </div><!--//WRAPPER-->
+    </div>
+    <!--//WRAPPER-->
 
-        <!-- +++ FOOTER +++ -->
-        <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__left">
-                    <span class="footer__sitemap-tag">Карта сайта:</span>
-                    <ul class="footer__sitemap">
-                        <li>
-                            <a class="is-active" href="#1">Главная</a>
-                        </li>
-                        <li>
-                            <a href="#3">Контакты</a>
-                        </li>
-                        <li>
-                            <a href="#4">Услуги</a>
-                        </li>
-                        <li>
-                            <a href="#5">О нас</a>
-                        </li>
-                        <li>
-                            <a href="#6">Новости</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__center">
-                    &#x24B8; КСК "Абрамцево", 2017
-                </div>
-                <div class="footer__right">
-                    Сделано в <a class="footer__andrius-link" href="">Andrius</a>
-                </div>
+    <!-- +++ FOOTER +++ -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__left">
+                <span class="footer__sitemap-tag">Карта сайта:</span>
+                <ul class="footer__sitemap">
+                    <li>
+                        <a class="is-active" href="#1">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#3">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="#4">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="#5">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#6">Новости</a>
+                    </li>
+                </ul>
             </div>
-        </footer>
+            <div class="footer__center">
+                &#x24B8; КСК "Абрамцево", 2017
+            </div>
+            <div class="footer__right">
+                Сделано в <a class="footer__andrius-link" href="">Andrius</a>
+            </div>
+        </div>
+    </footer>
 
-        <script>
-  
-        </script>
+    <script>
+    </script>
 
-        <!-- /// FOOTER /// -->
+    <!-- /// FOOTER /// -->
 
 </body>
 
