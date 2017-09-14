@@ -1047,7 +1047,9 @@ small {
 @media screen and (max-width: 767px) {
   .header {
     display: block;
-    min-height: 420px; }
+    min-height: 420px;
+    padding-bottom: 0;
+    margin-bottom: 0; }
     .header__title {
       border: none; }
     .header__right, .header__left {
@@ -1057,9 +1059,11 @@ small {
       width: calc(100% - 10px); }
     .header__center {
       margin: 0 auto; }
+    .header .work-time {
+      display: none; }
     .header_sub-page {
       min-height: 225px; }
-      .header_sub-page .address, .header_sub-page .email, .header_sub-page .work-time {
+      .header_sub-page .address, .header_sub-page .email {
         display: none; } }
 
 .footer {
@@ -1276,7 +1280,7 @@ small {
     .yandex-map-block__controls-icon:before {
       position: relative;
       top: 4.5px;
-      font-size: 2rem; }
+      font-size: 1.8rem; }
   .yandex-map-block__content {
     position: absolute;
     left: 0;
