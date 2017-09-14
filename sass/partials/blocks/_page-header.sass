@@ -1,54 +1,45 @@
 .page-header
     display: block
-    width: 100%
-    max-width: 980px
-    margin: auto
     text-align: center
-    padding-bottom: 2rem
+    overflow: hidden
+    white-space: nowrap
+    width: 100%
+    margin: 0 auto
+    text-align: center
+    padding-top: 4rem
+    padding-bottom: 4rem
 
     &_left
         text-align: left
     &_right
         text-align: right
     &__title
+        position: relative
         display: inline-block
         font-family: 'Kurale'
         font-size: 2rem
         margin: auto
 
-        &:after
-            content: ''
-            display: block
-            width: 100%
-            max-width: 320px
-            min-width: 300px
-            margin: 1rem auto
-            height: 1px
-            background: #ccc
+        &:before, &:after
+            content: ""
+            position: absolute
+            top: 50%
+            width: 9999px
+            border-top: 1px solid #ccc
+
+            // background: #ccc
         &:before
-            content: ''
-            display: block
-            width: 100%
-            max-width: 320px
-            min-width: 300px
-            margin: 0.5rem auto
-            height: 1px
-            background: #ccc
+            right: 100%
+            margin-right: 15px
+        &:after
+            left: 100%
+            margin-left: 15px
 
 +media($screen-small)
     .page-header
-        width: 100%
-        max-width: 100%
-        padding-bottom: 0
-        padding-top: 0
-        &__title
+        padding-top: 2rem
+        padding-bottom: 2.5rem
 
-            width: 100%
-            // padding-bottom: 0.8rem
-            // padding-top: 0.8rem
-            font-size: 1.5rem
-            margin-top: 0 
-            &:after, &:before
 
          
 

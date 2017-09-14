@@ -981,7 +981,9 @@ small {
   display: -webkit-flex;
   display: -ms-flex;
   height: 155px;
-  font-weight: 100; }
+  font-weight: 100;
+  padding-bottom: 40px;
+  margin-bottom: 40px; }
   .header__center {
     width: 209px; }
   .header__left, .header__right {
@@ -1013,6 +1015,8 @@ small {
     width: 45%;
     max-width: 385.5px;
     height: 25px; }
+  .header_sub-page .header__left, .header_sub-page .header__right {
+    border-bottom: none; }
   .header_main-page {
     color: white;
     opacity: 0.8; }
@@ -1166,8 +1170,9 @@ small {
 
 .section_content {
   background-color: white;
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-top: 2rem; }
+  .section_content:first-of-type {
+    padding-top: 0; }
 
 @media screen and (max-width: 767px) {
   .section_head-main {
@@ -1356,12 +1361,11 @@ small {
 
 .breadcrumbs {
   list-style: none;
-  width: 100%;
-  max-width: 980px;
-  margin: 0 auto;
   color: #333;
   font-size: 80%;
-  opacity: 0.8; }
+  opacity: 0.8;
+  padding: 0;
+  width: calc(50% - 104.5px); }
   .breadcrumbs:hover {
     opacity: 1;
     -webkit-transition: 0.3s;
@@ -1369,11 +1373,10 @@ small {
     transition: 0.3s; }
   .breadcrumbs__item {
     margin-right: 5px;
-    margin-top: 40px;
     display: inline-block;
     white-space: nowrap; }
     .breadcrumbs__item:after {
-      content: '/';
+      content: '\203A';
       display: inline-block;
       padding-left: 5px; }
     .breadcrumbs__item:last-child:after {
@@ -1386,14 +1389,10 @@ small {
       text-decoration: none;
       cursor: default; }
 
-@media screen and (max-width: 1040px) {
-  .breadcrumbs {
-    width: calc(100% - 20px);
-    padding-left: 10px; } }
-
 @media screen and (max-width: 767px) {
   .breadcrumbs {
-    font-size: 60%; } }
+    font-size: 60%;
+    width: 100%; } }
 
 .price-table {
   width: 100%; }
@@ -1430,7 +1429,7 @@ img[style*="float:right"], img[style*="float: right"], img[style*=" float: right
 
 ul {
   list-style: none;
-  margin-left: -35px; }
+  padding: 0; }
   ul li {
     padding-bottom: .3rem; }
 
@@ -1444,8 +1443,8 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
-  margin-top: 0.83em;
-  margin-bottom: 0.83em; }
+  margin-top: 3rem;
+  margin-bottom: 1rem; }
 
 h1 {
   font-size: 1.8rem; }
@@ -1552,49 +1551,41 @@ h3, h4, h5, h6 {
 
 .page-header {
   display: block;
-  width: 100%;
-  max-width: 980px;
-  margin: auto;
   text-align: center;
-  padding-bottom: 2rem; }
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
   .page-header_left {
     text-align: left; }
   .page-header_right {
     text-align: right; }
   .page-header__title {
+    position: relative;
     display: inline-block;
     font-family: 'Kurale';
     font-size: 2rem;
     margin: auto; }
-    .page-header__title:after {
-      content: '';
-      display: block;
-      width: 100%;
-      max-width: 320px;
-      min-width: 300px;
-      margin: 1rem auto;
-      height: 1px;
-      background: #ccc; }
+    .page-header__title:before, .page-header__title:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 9999px;
+      border-top: 1px solid #ccc; }
     .page-header__title:before {
-      content: '';
-      display: block;
-      width: 100%;
-      max-width: 320px;
-      min-width: 300px;
-      margin: 0.5rem auto;
-      height: 1px;
-      background: #ccc; }
+      right: 100%;
+      margin-right: 15px; }
+    .page-header__title:after {
+      left: 100%;
+      margin-left: 15px; }
 
 @media screen and (max-width: 767px) {
   .page-header {
-    width: 100%;
-    max-width: 100%;
-    padding-bottom: 0;
-    padding-top: 0; }
-    .page-header__title {
-      width: 100%;
-      font-size: 1.5rem;
-      margin-top: 0; } }
+    padding-top: 2rem;
+    padding-bottom: 2.5rem; } }
 
 .content-block {
   display: -webkit-box;
@@ -2340,7 +2331,8 @@ h3, h4, h5, h6 {
     max-width: 350px;
     margin-top: 105px;
     text-align: left;
-    margin-left: 0; }
+    margin-left: 0;
+    padding-left: 40px; }
     .nav__menu li {
       margin-bottom: 1rem; }
       .nav__menu li a {
@@ -2386,6 +2378,8 @@ h3, h4, h5, h6 {
     display: none; } }
 
 .logo {
+  position: relative;
+  bottom: 3px;
   display: block;
   width: 209px;
   height: 185px;
