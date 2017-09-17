@@ -57,6 +57,12 @@ $(document).ready(function () {
         $('body,html').animate({ scrollTop: top }, 500);
     });
 
+    $('.search').find('.search__input').on('focus', function(){
+            $(this).addClass('is-active');
+            $(this).next('.search__submit').addClass('is-active');
+    });
+
+
     $('.search').find('.search__input').bind('keyup paste change', function () {
         var isEmpty = true;
         if (isEmpty = true && $.trim(this.value) === "") {
@@ -68,12 +74,17 @@ $(document).ready(function () {
         showHideSubmit(isEmpty, $(this).next('.search__submit'));
     });
 
+    $('.search__input').on('blur', function(){
+        $(this).removeClass('is-active');
+        $(this).next('.search__submit').removeClass('is-active');
+    });
+
     function showHideSubmit(variable, obj) {
         if (variable == true) {
-            obj.addClass('is-active')
+            obj.removeAttr('disabled')
         }
         else {
-            obj.removeClass('is-active')
+            obj.attr('disabled', true)
         }
     }
 

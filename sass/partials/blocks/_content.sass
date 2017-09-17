@@ -30,14 +30,14 @@ a
 
 h1, h2, h3, h4, h5, h6
     font-weight: 300
-    margin-top: 3rem
+    margin-top: 2rem
     margin-bottom: 1rem
 h1
     font-size: 1.8rem
 h2
     font-size: 1.4rem
 h3, h4, h5, h6
-    font-size: 1rem
+    font-size: 1.2rem
 
 p, span, b, strong
     @extend %base-text
@@ -100,10 +100,42 @@ p, span, b, strong
             font-size: 0.6rem
             right: -0.3rem
 
+.price
+    position: relative
+    font-size: 2rem
+    font-weight: 300
+    border-top: 1px solid #ccc
+    border-bottom: 1px solid #ccc
+    padding-top: 1rem
+    padding-bottom: 1rem
+    padding-left: 2.5rem
+    &__text
+        display: block
+    &__icon
+        position: absolute
+        left: 0
+        top: 1rem
+.abonements
+    position: relative
+    font-size: 1.2rem
+    font-weight: 300
+    padding-top: 1rem
+    padding-bottom: 1rem
+    padding-left: 2.5rem
+    &__text
+        display: block
+    &__icon
+        position: absolute
+        left: 0
+        top: .5rem
+
+
 
 
 
 +media($screen-small)
+    h1, h2, h3, h4, h5, h6
+        margin-top: 1rem
 
     .content
 

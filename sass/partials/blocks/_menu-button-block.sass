@@ -1,5 +1,28 @@
 .menu-button-block
     position: absolute
+    right: 0
+    top: -30px
+    height: 30px
+    background: red
+    width: 100%
+    z-index: 11
+    color: #333
+    &_white
+      color: white
+      opacity: 0.8
+
+    &__container
+      @extend %base-container
+      text-align: right
+    &__row
+      position: relative
+      top: 50px
+      display: inline-block
+    &_white
+      color: white
+      opacity: 0.8
+      .menu-btn__line 
+        background-color: white
 
     &.is-active
         position: fixed
@@ -18,9 +41,6 @@
         user-select: none
         &.is-active
           color: #ccc
-
-// @media screen and (max-width: $screen-medium)
-    .menu-button-block
 
 
 .menu-btn

@@ -1,7 +1,8 @@
 .search
-    position: relative
-    bottom: 4.5px
-    display: inline-block
+    position: absolute
+    top: 20px
+    display: inline-flex
+    width: calc(50% - #{$logo-width / 2 + 10px})
     
     &__input
         position: relative
@@ -11,24 +12,42 @@
         outline: none
         background: transparent
         padding-bottom: 2.5px
-        max-width: 125px
+        width: 70%
         padding-left: 2rem
+        &.is-active
+            border: 1px solid
+
+
+
     &__icon
         +icomoon
         @extend .icon-search2
         position: absolute
-        // top: 4px
+        top: 4px
+
         font-size: 1.3em
 
     &__submit
+        text-align: center
         background: transparent
         border: 1px solid
         border-radius: 2px
         opacity: 0
-        transition: 0.3s
+        border-top: 1px solid
+        border-left: none
+        border-right: 1px solid
+        padding-top: 2.5px
+        padding-bottom: 2.5px
+        padding-left: 10px
+        padding-right: 10px
+
+        width: 30%
+
         &.is-active
             opacity: 1
-            transition: 0.3s
+
+
+
 
         
 
