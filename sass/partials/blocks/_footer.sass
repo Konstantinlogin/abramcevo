@@ -74,6 +74,16 @@
                     transition: 0.3s
                     border-bottom: 1px solid
 
+            &.is-active
+                a
+                    font-weight: 500
+                    opacity: 1
+                    &:hover
+                        opacity: 1
+                        transition: 0.3s
+                        border-bottom: none
+                        cursor: default
+
 +media($screen-small)
         
     .footer
@@ -108,9 +118,11 @@
             columns: 1
             -webkit-columns: 1
             -moz-columns: 1
+
             li
                 display: inline-block
                 margin-right: 10px
+     
 
 
 

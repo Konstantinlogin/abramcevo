@@ -1,5 +1,13 @@
 .content
     color: #333
+
+.image
+    &_news
+        max-width: 320px
+        width: 100%
+        float: right
+        margin-left: 20px
+
 img
     max-width: 100%
 
@@ -42,6 +50,13 @@ h3, h4, h5, h6
 p, span, b, strong
     @extend %base-text
 
+
+.text
+    @extend %base-text
+    &_gray
+        color: gray
+
+
 .title
     display: block
     font-weight: 300
@@ -73,6 +88,9 @@ p, span, b, strong
     background-size: cover
     background-repeat: no-repeat
     background-position: center
+    &_news-page
+        width: 50%
+        float: left
 
     &_full-height
         height: 100%
@@ -87,6 +105,8 @@ p, span, b, strong
     display: inline-block
     width: 100%
     text-align: right
+    margin-top: 10px
+    margin-bottom: 10px
     &_left
         text-align: left
     &__link
@@ -102,7 +122,7 @@ p, span, b, strong
 
 .price
     position: relative
-    font-size: 2rem
+    font-size: 1.5rem
     font-weight: 300
     border-top: 1px solid #ccc
     border-bottom: 1px solid #ccc
@@ -134,6 +154,13 @@ p, span, b, strong
 
 
 +media($screen-small)
+    .image
+        &_news
+            float: none
+
+
+            margin-right: 0
+
     h1, h2, h3, h4, h5, h6
         margin-top: 1rem
 

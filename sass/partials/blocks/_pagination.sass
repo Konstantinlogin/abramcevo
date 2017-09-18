@@ -1,0 +1,44 @@
+.pagination
+    display: inline-block
+    text-align: center
+    width: 100%
+    margin-top: 40px
+    color: gray
+    position: relative
+    overflow: hidden
+
+    &__title
+        font-weight: 500
+
+    &__container
+        display: inline-block
+        text-align: right
+        position: relative
+
+        &:before, &:after
+            content: ""
+            position: absolute
+            top: 50%
+            width: 9999px
+            border-top: 1px solid #ccc
+
+        &:before
+            right: 100%
+            margin-right: 15px
+        &:after
+            left: 100%
+            margin-left: 15px
+        ul
+
+            li
+                display: inline-block
+                a
+                    margin: 10px
+                    &:last-of-type
+                        margin-right: 0
+                    
+                    // display: inline-block
+                &.is-active
+                    a
+                        font-weight: bold
+                        text-decoration: none

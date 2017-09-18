@@ -8,12 +8,6 @@
     <meta name="format-detection" content="telephone=no">
     <title>KCKA</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/libs/jquery.min.js"></script>
-    <script src="js/plugins/bideo.js"></script>
-    <script src="js/plugins/swiper.jquery.min.js"></script>
-    <script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU'></script>
-    <script src="js/plugins/swiper.jquery.min.js"></script>
-    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -40,8 +34,8 @@
             </div>
         </header>
 
-         <div class="menu-button-block">
-             <div class="menu-button-block__container">
+        <div class="menu-button-block">
+            <div class="menu-button-block__container">
                 <div class="menu-button-block__row">
                     <span class="menu-button-block__menu-name">меню</span>
                     <div class="menu-button-block__button menu-btn menu-btn_close1">
@@ -52,7 +46,7 @@
                         </div>
                     </div>
                 </div>
-             </div>
+            </div>
         </div>
 
         <nav class="nav">
@@ -77,39 +71,309 @@
 
         <!-- /// HEADER /// -->
 
-
-        <!-- +++ CONTENT +++ -->
-
-        <main class="content">
+        <!-- about_us -->
+        <div class="content">
             <section class="section section_content">
                 <div class="lo-container">
 
-                    <div class="page-header">
+                    <!-- +++ PAGETITLE_SUB_PAGE +++ -->
+                    <div class="page-header page-header_sub-page">
                         <h1 class="page-header__title">О нас</h1>
                     </div>
+                    <!-- /// PAGETITLE_SUB_PAGE /// -->
 
+                    <!-- +++ BREADCRUMBS +++ -->
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link is-active" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <!-- /// BREADCRUMBS /// -->
+
+                    <!-- ===== -->
+                    <img style="float: left" src="img/jump.jpg" alt="КСК Абрамцево" width="420" />
+                    <h2>Любовь к своему делу</h2>
+                    <p> В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход, основываясь
+                        на ограничениях, наложенных на систему. Гироинтегратор концентрирует анализ зарубежного опыта..</p>
+                    <p> Контент выше нужно выводить на главную.. А здесь всё остальное</p>
+                    <!-- ===== -->
+
+                </div>
+            </section>
+        </div>
+
+        <!-- services -->
+        <div class="content">
+            <section class="section section_content">
+                <div class="lo-container">
+
+                    <!-- +++ PAGETITLE_SUB_PAGE +++ -->
+                    <div class="page-header page-header_sub-page">
+                        <h1 class="page-header__title">Услуги</h1>
+                    </div>
+                    <!-- /// PAGETITLE_SUB_PAGE /// -->
+
+                    <!-- +++ BREADCRUMBS +++ -->
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link is-active" href="#">Услуги</a>
+                        </li>
+                    </ul>
+                    <!-- /// BREADCRUMBS /// -->
+
+                    <!-- ===== -->
                     <div class="grid">
-                        <div class="grid__row">
+                        <div class="grid__row grid__row_inversed ">
                             <div class="grid__col-50">
                                 <img src="img/jump.jpg" alt="КСК Абрамцево" />
+                                <!--Выводить первое изображение из services_item-->
                             </div>
                             <div class="grid__col-50">
-                                <h2>Любовь к своему делу</h2>
-                                <p>
-                                    В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход, основываясь на ограничениях,
-                                    наложенных на систему. Гироинтегратор концентрирует анализ зарубежного опыта...
-                                </p>
+                                <h1>Обучение верховой езде</h1>
+                                <div class="price">
+                                    <span class="icon-price price__icon"></span>
+                                    <span class="price__text">1 500 / занятие</span>
+                                </div>
+                                <!--Не выводить abonements если их нет-->
+                                <div class="abonements">
+                                    <div class="abonements__icon icon-ticket"></div>
+                                    <span class="abonements__text">8 занятий: 8 000 руб.</span>
+                                    <span class="abonements__text">5 занятий: 5 000 руб.</span>
+                                </div>
+                                <p> Здесь краткое описание Услуги. Небольшой абзац текста - что это вообще такое, кому подходит.</p>
+                                <div class="read-more">
+                                    <a href="#" class="read-more__link">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__row grid__row_inversed">
+                            <div class="grid__col-50">
+                                <img src="img/examle2.jpg" alt="КСК Абрамцево" />
+                            </div>
+                            <div class="grid__col-50">
+                                <h1>Постой лошади</h1>
+                                <div class="price">
+                                    <span class="icon-price price__icon"></span>
+                                    <span class="price__text">15 000 / месяц</span>
+                                </div>
+                                <p> Здесь краткое описание Услуги. Небольшой абзац текста - что это вообще такое, кому подходит.</p>
                                 <div class="read-more">
                                     <a href="#" class="read-more__link">Подробнее</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- ===== -->
 
                 </div>
             </section>
-        </main>
-        <!-- /// CONTENT /// -->
+        </div>
+
+        <!-- services_item -->
+        <div class="content">
+            <section class="section section_content">
+                <div class="lo-container">
+
+                    <!-- +++ BREADCRUMBS +++ -->
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Услуги</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link is-active" href="#">Обучение верховой езде</a>
+                        </li>
+                    </ul>
+                    <!-- /// BREADCRUMBS /// -->
+
+                    <!-- ===== -->
+                    <div class="grid">
+                        <div class="grid__row">
+                            <div class="grid__col-50">
+                                <div class="fotorama" data-nav="thumbs">
+                                    <a href="img/jump.jpg"><img src="img/jump.jpg" alt="КСК Абрамцево" /></a>
+                                    <a href="img/examle1.jpg"><img src="img/examle1.jpg" alt="КСК Абрамцево" /></a>
+                                    <a href="img/examle2.jpg"><img src="img/examle2.jpg" alt="КСК Абрамцево" /></a>
+                                    <a href="img/examle3.jpg"><img src="img/examle3.jpg" alt="КСК Абрамцево" /></a>
+                                    <a href="img/jump.jpg"><img src="img/jump.jpg" alt="КСК Абрамцево" /></a>
+                                    <a href="img/jump.jpg"><img src="img/jump.jpg" alt="КСК Абрамцево" /></a>
+                                    <a href="img/examle3.jpg"><img src="img/examle3.jpg" alt="КСК Абрамцево" /></a>
+                                </div>
+                            </div>
+                            <div class="grid__col-50">
+                                <h1>Обучение верховой езде</h1>
+                                <div class="price">
+                                    <span class="icon-price price__icon"></span>
+                                    <span class="price__text">1 500 / занятие</span>
+                                </div>
+                                <!--Не выводить abonements если их нет-->
+                                <div class="abonements">
+                                    <div class="abonements__icon icon-ticket"></div>
+                                    <span class="abonements__text">8 занятий: 8 000 руб.</span>
+                                    <span class="abonements__text">5 занятий: 5 000 руб.</span>
+                                </div>
+                                <p> Здесь краткое описание Услуги. Небольшой абзац текста - что это вообще такое, кому подходит.</p>
+                            </div>
+                        </div>
+                        <p> Здесь подробное описание Услуги. Чем больше подробностей - тем лучше!</p>
+                    </div>
+                    <!-- ===== -->
+
+                </div>
+            </section>
+        </div>
+
+
+        <!-- news -->
+        <div class="content">
+            <section class="section section_content">
+                <div class="lo-container">
+
+                    <!-- +++ PAGETITLE_SUB_PAGE +++ -->
+                    <div class="page-header page-header_sub-page">
+                        <h1 class="page-header__title">Новости</h1>
+                    </div>
+                    <!-- /// PAGETITLE_SUB_PAGE /// -->
+
+                    <!-- +++ BREADCRUMBS +++ -->
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link is-active" href="#">Новости </a>
+                        </li>
+                    </ul>
+                    <!-- /// BREADCRUMBS /// -->
+
+                    <!-- ===== -->
+                    <div class="grid">
+
+                        <div class="grid__row">
+                            <div class="grid__col-33">
+                                <div class="bg-image" style="background-image: url(img/news-2.jpg)"></div>
+                            </div>
+                            <div class="grid__col-67">
+                                <a href="#" class="title title_link">Поздравляем с победой Нашу Дашу</a>
+                                <span class="date">01.04.2017</span>
+                                <p>В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход.
+                                    В связи с этим нужно подчеркнуть, что...</p>
+                                <div class="read-more">
+                                    <a href="#" class="read-more__link">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="grid__row">
+                            <div class="grid__col-33">
+                                <div class="bg-image" style="background-image: url(img/news-3.jpg)"></div>
+                            </div>
+                            <div class="grid__col-67">
+                                <a href="#" class="title title_link">Поздравляем с победой Нашу Дашу</a>
+                                <span class="date">01.04.2017</span>
+                                <p>В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход.
+                                    В связи с этим нужно подчеркнуть, что...</p>
+                                <div class="read-more">
+                                    <a href="#" class="read-more__link">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- ===== -->
+
+                    <!-- +++ PAGINATION +++ -->
+                    <div class="pagination">
+                        <div class="pagination__container">
+                            <span class="pagination__title">
+                            Страницы:
+                        </span>
+                            <ul>
+                                <li class="is-active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /// PAGINATION /// -->
+
+                </div>
+            </section>
+        </div>
+
+        <!-- news_item -->
+
+        <div class="content">
+            <section class="section section_content">
+                <div class="lo-container">
+
+
+                    <!-- +++ BREADCRUMBS +++ -->
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Новости </a>
+                        </li>
+                        <li class="breadcrumbs__item is-active">
+                            <a class="breadcrumbs__link " href="#">Поздравляем с победой нашу Дашу </a>
+                        </li>
+                    </ul>
+                    <!-- /// BREADCRUMBS /// -->
+
+                    <!-- ===== -->
+
+                    <div class="grid__row">
+                        <div class="grid__col-67">
+                            <a href="#" class="title title_link">Поздравляем с победой Нашу Дашу</a>
+                            <span class="date">01.04.2017</span>
+                            <p>В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход.
+                                В связи с этим нужно подчеркнуть, что...</p>
+                            <p>В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход.
+                                В связи с этим нужно подчеркнуть, что...</p>
+                            <p>В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход.
+                                В связи с этим нужно подчеркнуть, что...</p>
+                            <p>В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход.
+                                В связи с этим нужно подчеркнуть, что...</p>
+                            <p>В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход.
+                                В связи с этим нужно подчеркнуть, что...</p>
+                        </div>
+                        <div class="grid__col-33">
+                            <div class="bg-image" style="background-image: url(img/news-3.jpg)"></div>
+                            <small class="text text_gray">Вывод описания фотографии</small>
+                        </div>
+                    </div>
+                    <!-- ===== -->
+
+                </div>
+
+
+        </div>
+        </section>
+    </div>
+
+
+
 
     </div>
     <!--//WRAPPER-->
@@ -135,6 +399,9 @@
                     <li>
                         <a href="#6">Новости</a>
                     </li>
+                    <li class="is-active">
+                        <a href="#6">Активный пункт меню</a>
+                    </li>
                 </ul>
             </div>
             <div class="footer__center">
@@ -147,6 +414,16 @@
     </footer>
 
     <!-- /// FOOTER /// -->
+
+    <!-- +++ SCRIPTS +++ -->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/plugins/bideo.js"></script>
+    <script src="js/plugins/swiper.jquery.min.js"></script>
+    <script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU'></script>
+    <script src="js/plugins/swiper.jquery.min.js"></script>
+    <script src="js/plugins/fotorama.js"></script>
+    <script src="js/main.js"></script>
+    <!-- /// SCRIPTS /// -->
 
 </body>
 
