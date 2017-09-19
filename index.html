@@ -8,12 +8,6 @@
     <meta name="format-detection" content="telephone=no">
     <title>KCKA</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/libs/jquery.min.js"></script>
-    <script src="js/plugins/bideo.js"></script>
-    <script src="js/plugins/swiper.jquery.min.js"></script>
-    <script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU'></script>
-    <script src="js/plugins/swiper.jquery.min.js"></script>
-    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -57,18 +51,30 @@
 
         <nav class="nav">
             <div class="nav__container">
-                <h2 class="nav__menu-title">Меню сайта</h2>
+                <h2 class="nav__menu-title">Components<!--Меню сайта--></h2>
                 <div class="nav__menu-container">
                     <ul class="nav__menu">
-                        <li>
-                            <a href="/index.html">Главная</a>
+                        <li class="is-active">
+                            <a href="/index.html">main_page</a>
                         </li>
                         <li>
+                            <a href="/about_us.html">about_us</a>
+                        </li>
+                        <li>
+                            <a href="/services.html">services</a>
+                        </li>
+                        <li>
+                            <a href="/services_item.html">services_item</a>
+                        </li>
+                        <li>
+                            <a href="/news.html">news</a>
+                        </li>
+                        <li>
+                            <a href="/news_item.html">news_item</a>
+                        </li>
+                        <!--<li>
                             <a href="/layout_2.html">layout</a>
-                        </li>
-                        <li>
-                            <a href="/service.html">service item</a>
-                        </li>
+                        </li>-->
                     </ul>
                     <div class="nav__menu-overlay"></div>
                 </div>
@@ -245,7 +251,7 @@
 
             </section>
 
-            <section class="section section_content">
+            <section class="section section_last">
                 <div class="lo-container">
                     <div class="page-header">
                         <h1 class="page-header__title">Контакты</h1>
@@ -284,8 +290,8 @@
             <div class="footer__left">
                 <span class="footer__sitemap-tag">Карта сайта:</span>
                 <ul class="footer__sitemap">
-                    <li>
-                        <a class="is-active" href="#1">Главная</a>
+                    <li class="is-active">
+                        <a href="#1">Главная</a>
                     </li>
                     <li>
                         <a href="#3">Контакты</a>
@@ -309,8 +315,20 @@
             </div>
         </div>
     </footer>
-
     <!-- /// FOOTER /// -->
+
+    <!-- +++GLOBAL_SCRIPTS +++ -->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- /// GLOBAL_SCRIPTS /// -->
+
+    <!--PLUGINS-->
+    <script src="js/plugins/bideo.js"></script>
+    <script src="js/plugins/swiper.jquery.min.js"></script>
+    <script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU'></script>
+
+    <!--INITS-->
+    <script async src="js/inits/main_page.js"></script>
 
 </body>
 

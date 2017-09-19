@@ -1,21 +1,19 @@
 .breadcrumbs
-
-
     list-style: none
     color: #333
     font-size: 80%
     opacity: 0.8
     padding: 0
-
-    width: calc(50% - #{$logo-width / 2})
+    // width: calc(50% - #{$logo-width / 2})
+    margin-top: 1em
+    margin-bottom: 1em
 
 
     &:hover
         opacity: 1
         transition: 0.3s
-    &__item
+    li
         margin-right: 5px
-
         display: inline-block
         white-space: nowrap
 
@@ -30,19 +28,15 @@
                 display: none
 
         &.is-active
-            .breadcrumbs__link
+            a
                 font-weight: 900
                 text-decoration: none
                 cursor: default
 
 
-    &__link
-        color: #333
+        a
+            color: #333
         
-        &.is-active
-            font-weight: 900
-            text-decoration: none
-            cursor: default
 
 +media($screen-small)
     .breadcrumbs
