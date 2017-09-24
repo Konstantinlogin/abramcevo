@@ -16,6 +16,7 @@ $(document).ready(function () {
     // bvideo.js
 
     var bv = new Bideo();
+    var videoPath = $('#background_video').attr('data-video');
 
     bv.init({
         // Video element
@@ -35,11 +36,13 @@ $(document).ready(function () {
         playButton: document.querySelector('#play'),
         pauseButton: document.querySelector('#pause'),
 
+        
+
         // Array of objects containing the src and type
         // of different video formats to add
         src: [
             {
-                src: 'video/video6.mp4',
+                src: videoPath,
                 type: 'video/mp4'
             }
         ],
