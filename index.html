@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <div class="lo-wrapper">
+    <div class="lo-wrapper main-page">
 
         <!-- +++ HEADER +++ -->
 
-        <header class="header header_main-page">
+        <header class="header">
             <div class="header__left">
                 <form class="search">
                     <i class="search__icon"></i>
@@ -34,8 +34,8 @@
             </div>
         </header>
 
-         <div class="menu-button-block menu-button-block_white">
-             <div class="menu-button-block__container">
+        <div class="menu-button-block">
+            <div class="menu-button-block__container">
                 <div class="menu-button-block__row">
                     <span class="menu-button-block__menu-name">меню</span>
                     <div class="menu-button-block__button menu-btn menu-btn_close1">
@@ -46,12 +46,14 @@
                         </div>
                     </div>
                 </div>
-             </div>
+            </div>
         </div>
 
         <nav class="nav">
             <div class="nav__container">
-                <h2 class="nav__menu-title">Components<!--Меню сайта--></h2>
+                <h2 class="nav__menu-title">Components
+                    <!--Меню сайта-->
+                </h2>
                 <div class="nav__menu-container">
                     <ul class="nav__menu">
                         <li class="is-active">
@@ -166,9 +168,9 @@
 
         <!-- +++ CONTENT +++ -->
 
-        <div class="content">
+        <div class="lo-main">
 
-            <section id="about" class="section section_content">
+            <section id="about" class="content section section_content">
                 <div class="lo-container">
                     <div class="page-header">
                         <h1 class="page-header__title">О нас</h1>
@@ -176,10 +178,11 @@
                     <div class="grid">
                         <div class="grid__row">
                             <div class="grid__col-100">
-                                <img style="float: left" src="img/jump.jpg" alt="КСК Абрамцево" width="420"/>
+                                <img style="float: left" src="img/jump.jpg" alt="КСК Абрамцево" width="420" />
                                 <h2>Любовь к своему делу</h2>
-                                <p> В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход, основываясь на ограничениях,
-                                    наложенных на систему. Гироинтегратор концентрирует анализ зарубежного опыта...
+                                <p> В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход,
+                                    основываясь на ограничениях, наложенных на систему. Гироинтегратор концентрирует анализ
+                                    зарубежного опыта...
                                 </p>
                                 <div class="read-more">
                                     <a href="#" class="read-more__link">Подробнее</a>
@@ -189,69 +192,57 @@
                     </div>
                 </div>
             </section>
-
-            <section class="section section_content">
+            <section class="content section section_content">
                 <div class="lo-container">
                     <div class="page-header">
                         <h1 class="page-header__title">Новости</h1>
                     </div>
-                    <div class="grid">
-                        <div class="grid__row">
-                            <div class="grid__col-67">
-                                <a href="#" class="title title_link">Поздравляем с победой Нашу Дашу</a>
-                                <span class="date">01.04.2017</span>
-                                <p>В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход.
-                                    В связи с этим нужно подчеркнуть, что...</p>
-                                <div class="read-more">
-                                    <a href="#" class="read-more__link">Подробнее</a>
-                                </div>
-                            </div>
-                            <div class="grid__col-33">
-                                <div class="bg-image" style="background-image: url(img/news-1.jpg)"></div>
+                    <div class="news-block">
+                        <div class="news-block__item">
+                            <a href="#" class="title title_link">Поздравляем с победой Нашу Дашу</a>
+                            <span class="date">01.04.2017</span>
+                            <div class="bg-image news-block__image" style="background-image: url(img/news-2.jpg)"></div>
+                            <p>В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход.
+                                В связи с этим нужно подчеркнуть, что...</p>
+                            <div class="read-more">
+                                <a href="#" class="read-more__link">Подробнее</a>
                             </div>
                         </div>
-                        <div class="grid__row">
-                            <div class="grid__col-33">
-                                <a href="#" class="title title_link">Поздравляем с победой Нашу Дашу</a>
-                                <span class="date">01.04.2017</span>
-                                <div class="bg-image" style="background-image: url(img/news-2.jpg)"></div>
-                                <p>В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход.
-                                    В связи с этим нужно подчеркнуть, что...</p>
-                                <div class="read-more">
-                                    <a href="#" class="read-more__link">Подробнее</a>
-                                </div>
-
+                        <div class="news-block__item">
+                            <a href="#" class="title title_link">Поздравляем с победой Нашу Дашу</a>
+                            <span class="date">01.04.2017</span>
+                            <div class="bg-image news-block__image" style="background-image: url(img/news-2.jpg)"></div>
+                            <p>В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход.
+                                В связи с этим нужно подчеркнуть, что...</p>
+                            <div class="read-more">
+                                <a href="#" class="read-more__link">Подробнее</a>
                             </div>
-                            <div class="grid__col-33">
-                                <a href="#" class="title title_link">Поздравляем с победой Нашу Дашу</a>
-                                <span class="date">01.04.2017</span>
-                                <div class="bg-image" style="background-image: url(img/news-2.jpg)"></div>
-                                <p>В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход.
-                                    В связи с этим нужно подчеркнуть, что...</p>
-                                <div class="read-more">
-                                    <a href="#" class="read-more__link">Подробнее</a>
-                                </div>
-
+                        </div>
+                        <div class="news-block__item">
+                            <a href="#" class="title title_link">Поздравляем с победой Нашу Дашу</a>
+                            <span class="date">01.04.2017</span>
+                            <div class="bg-image news-block__image" style="background-image: url(img/news-2.jpg)"></div>
+                            <p>В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход.
+                                В связи с этим нужно подчеркнуть, что...</p>
+                            <div class="read-more">
+                                <a href="#" class="read-more__link">Подробнее</a>
                             </div>
-                            <div class="grid__col-33">
-                                <a href="#" class="title title_link">Поздравляем с победой Нашу Дашу</a>
-                                <span class="date">01.04.2017</span>
-                                <div class="bg-image" style="background-image: url(img/news-2.jpg)"></div>
-                                <p>В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход.
-                                    В связи с этим нужно подчеркнуть, что...</p>
-                                <div class="read-more">
-                                    <a href="#" class="read-more__link">Подробнее</a>
-                                </div>
-
+                        </div>
+                        <div class="news-block__item">
+                            <a href="#" class="title title_link">Поздравляем с победой Нашу Дашу</a>
+                            <span class="date">01.04.2017</span>
+                            <div class="bg-image news-block__image" style="background-image: url(img/news-2.jpg)"></div>
+                            <p>В связи с этим нужно подчеркнуть, что ламинарное движение детерминирует систематический уход.
+                                В связи с этим нужно подчеркнуть, что...</p>
+                            <div class="read-more">
+                                <a href="#" class="read-more__link">Подробнее</a>
                             </div>
                         </div>
                     </div>
                 </div>
+        </section>
 
-
-            </section>
-
-            <section class="section section_last">
+            <section class="content section section_content">
                 <div class="lo-container">
                     <div class="page-header">
                         <h1 class="page-header__title">Контакты</h1>
@@ -278,8 +269,8 @@
                 </div>
             </section>
 
-        </div>
-        <!-- /// CONTENT /// -->
+    </div>
+    <!-- /// CONTENT /// -->
 
     </div>
     <!--//WRAPPER-->

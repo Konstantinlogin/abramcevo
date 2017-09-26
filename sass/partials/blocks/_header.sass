@@ -9,14 +9,13 @@
     height: $header-height
     font-weight: 100
     padding-bottom: 40px
-    margin-bottom: 40px
     
     &__center
         width: $logo-width
 
 
     &__left, &__right
-        border-bottom: 1px solid
+
         width: calc(50% - #{$logo-width / 2})
         height: $header-height - 3.5px
         display: flex
@@ -44,28 +43,6 @@
         max-width: (980px/2) - (209px/2)
         height: 25px
 
-    &_sub-page
-        .header__left,  .header__right
-            border-bottom: none
-
-
-
-    &_main-page
-        color: white
-        opacity: 0.8
-
-        .logo
-            background-image: url(../img/logo_white.png)
-
-        .search__input
-            &::-webkit-input-placeholder
-                color: white
-            &::-moz-placeholder
-                color: white
-            &:-moz-placeholder
-                color: white
-            &:-ms-input-placeholder
-                color: white
 
         
 +media($screen-medium)

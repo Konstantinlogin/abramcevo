@@ -1,0 +1,46 @@
+.main-page
+    .header
+        color: white
+        opacity: 0.8
+        &__left, &__right
+            border-bottom: 1px solid
+    .logo
+        background-image: url(../img/logo_white.png)
+    .search
+        &__input
+            &::-webkit-input-placeholder
+                color: white
+            &::-moz-placeholder
+                color: white
+            &:-moz-placeholder
+                color: white
+            &:-ms-input-placeholder
+                color: white
+    .menu-button-block
+        color: white
+        opacity: 0.8
+
+    .menu-btn
+        &__line 
+            background-color: white
+
+    .page-header
+        padding-top: 60px
+        padding-bottom: 60px
+
+    .section
+        padding-bottom: 0
+
++media($screen-small)
+    .main-page
+        .header
+            &__left, &__right
+                border: none
+        .page-header
+            padding-top: 20px
+            padding-bottom: 20px
+
+
+
+        
+
