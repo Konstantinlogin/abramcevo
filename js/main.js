@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    console.log('Что происходит с кэшированием?');
+
     var menuNameText = $('.menu-button-block__menu-name').text();
 
     var isMenuActive = false;
